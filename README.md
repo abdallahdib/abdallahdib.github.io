@@ -7,6 +7,7 @@ My research interests are at the intersection of computer vision, machine learni
 
 
 ### Contact me
+[![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)
 
 ### Publications
 
