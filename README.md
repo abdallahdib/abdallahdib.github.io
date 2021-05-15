@@ -5,9 +5,10 @@ I received my Phd in Computer Science from Inria research center in 2016.
 
 My research interests are at the intersection of computer vision, machine learning and graphics. I apply deep learning and numerical optimization for scene understanding from images and videos.
 
+<center><a href="https://www.linkedin.com/in/abdallah-dib-19912b25/"><img src="images/linkedin.png" height="40" ></a>
+<a href="https://scholar.google.fr/citations?user=yb6wpSEAAAAJ&hl=fr"><img src="images/scholar.png" height="40" ></a>
+<a href="https://twitter.com/abdallah_dib"><img src="images/twitter.png" height="40" ></a></center>
 
-### Contact me
-[![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)
 
 ### Publications
 
