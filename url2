@@ -1,0 +1,56 @@
+## About me
+
+I am a research scientist working at InterDigital R&I France. Previously, I held the same position at Technicolor research and as a research engineer at Inria.
+I received my Phd in Computer Science from Inria research center in 2016.
+
+My research interests are at the intersection of computer vision, machine learning and graphics. I apply deep learning and numerical optimization for scene understanding from images and videos.
+<p align="center">
+<a href="https://www.linkedin.com/in/abdallah-dib-19912b25/"><img src="images/linkedin.png" height="40" ></a>
+<a href="https://scholar.google.fr/citations?user=yb6wpSEAAAAJ&hl=fr"><img src="images/scholar.png" height="40" ></a>
+<a href="https://twitter.com/abdallah_dib"><img src="images/twitter.png" height="40" ></a></center>
+</p>
+
+## Publications
+
+<p align="center">
+  <strong>Practical Face Reconstruction via Differentiable Ray Rracing</strong><br>
+  <small>Abdallah Dib, Gaurav Bharaj, Junghyun Ahn, Cédric Thébault, Philippe-Henri Gosselin, Marco Romeo, Louis Chevallier</small><br>
+  <i>Computer Graphics Forum, Eurographics' 2021</i><br>
+  <a href="https://arxiv.org/abs/2101.05356">abstract</a> |
+  <a href="https://arxiv.org/pdf/2101.05356.pdf">paper</a> |
+  <a href="#">video</a>
+  <br><br>
+  <img src="images/dib2021practical.png" width="700">
+</p>
+
+<p align="center">
+  <strong>Towards High Fidelity Monocular Face Reconstruction with Rich Reflectance using Self-supervised Learning and Ray Tracing</strong><br>
+  <small>Abdallah Dib, Cedric Thebault, Junghyun Ahn, Philippe-Henri Gosselin, Christian Theobalt, Louis Chevallier</small><br>
+  <i>arXiv print</i><br>
+  <a href="https://arxiv.org/abs/2103.15432">abstract</a> |
+  <a href="https://arxiv.org/pdf/2103.15432.pdf">paper</a> |
+  <a href="#">video</a>
+  <br><br>
+  <img src="images/dib2021towards.png" width="700">
+</p>
+
+<p align="center">
+  <strong>PhotoApp: Photorealistic Appearance Editing of Head Portraits</strong><br>
+  <small>Mallikarjun B R, Ayush Tewari, Abdallah Dib, Tim Weyrich, Bernd Bickel, Hans-Peter Seidel, Hanspeter Pfister, Wojciech Matusik, Louis Chevallier, Mohamed Elgharib, Christian Theobalt</small><br>
+  <i>ACM Transactions on Graphics (SIGGRAPH Asia 2021)</i><br>
+  <a href="https://arxiv.org/abs/2103.07658">abstract</a> |
+  <a href="https://arxiv.org/pdf/2103.07658.pdf">paper</a> |
+  <a href="#">video</a>
+  <br><br>
+  <img src="images/malikarjun2021photoapp.png" width="700">
+</p>
+
+
+## Programming
+
+
+
+
+
+
+
