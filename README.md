@@ -12,6 +12,7 @@ My research interests are at the intersection of computer vision, machine learni
 
 ### Publications
 
+<img src="images/dib2021practical.png" alt="drawing" width="200"/>
 
 ### Programming
 
