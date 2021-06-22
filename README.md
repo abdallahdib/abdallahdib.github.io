@@ -101,7 +101,7 @@ Here you find some of my personal projects I did (and continue doing) in spare t
 
 <p align="center">
  <strong>Physically based rendering engine</strong><br>
- <small>I Continue developing  and maintaining this graphics engine. It is used mainly for visualizing 3D models. it is written in  C++/OpenGL and i ported it to many platforms: windows/mac/linux/iOS/Android(via JNI)/Web(via Emiscripten). It implements physically based rendering with various BRDF models (Cook-Torrance, Phong), Deferred shading, Ambient occlusion, Shadow mapping, normal and parallax mapping. It has built-in 2D GUI support via 'imgui'. It uses Bullet for phyiscs simulation. It implements Frustum culling and supports large scale terrain rendering. </small>
+ <small>I Continue developing  and maintaining this graphics engine. It is used mainly for visualizing 3D models. it is written in  C++/OpenGL and i ported it to many platforms: windows/mac/linux/iOS/Android(via JNI)/Web(via Emiscripten). It implements physically based rendering with various BRDF models (Cook-Torrance, Phong), Deferred shading, Shadow and normal mapping. It has built-in 2D GUI support via 'imgui'. </small>
 </p>
 
 <p align="center">
