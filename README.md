@@ -91,10 +91,6 @@ My research interests are at the intersection of computer vision, machine learni
   <img src="images/dib2011hmm.png" width="500">
 </p>
 
-
-
-
-
 ##  Personal Devs
 
 Here you find some of my personal projects I did (and continue doing) in spare time. they are related to C++ and Graphics programming (OpenGL/GLSL), and mobile dev (iOS).
@@ -145,20 +141,12 @@ Here you find some of my personal projects I did (and continue doing) in spare t
   <img src="images/ios/mos1.PNG" width="300" ><img src="images/ios/mos2.PNG" width="300" >
 </p>
 
-
-
-
 <p align="center">
   <strong>Camera Art effects</strong><br>
   <small>It is  photography application for iOS ( iPhone, iPod and iPad) that lets you apply filter and effects to your camera and in real time. It uses optimized GLSL shaders to run in realtime on an iPhone 3GS. Supported filters: Cartoon; Old Movie, Pencil, Colored Pencil, Bulge, Dent, Rain, ... Written entirely in C++/OpenGL.</small>
 </p>
 
 <p align="center">
-	<img src="images/ios/art1.JPG" width="180" ><img src="images/ios/art2.PNG" width="180" >
-	<img src="images/ios/art3.JPG" width="180" ><img src="images/ios/art4.PNG" width="180" >
+<img src="images/ios/art1.JPG" width="180" ><img src="images/ios/art2.PNG" width="180" >
+<img src="images/ios/art3.JPG" width="180" ><img src="images/ios/art4.PNG" width="180" >
 </p>
-
-
-
-
-
