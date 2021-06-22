@@ -1,6 +1,6 @@
 ## About me
 
-I am a research scientist working at InterDigital R&I France since 2019. Previously, I held the same position at Technicolor research (2017-2019) and I worked as a research engineer at Inria (from 2008-2012).
+I am a senior research scientist working at InterDigital R&I France since 2019. Previously, I held the same position at Technicolor research (2017-2019) and I worked as a research engineer at Inria (from 2008-2012).
 
 I received my Phd in Computer Science from Inria research center in 2016.
 
