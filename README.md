@@ -122,7 +122,7 @@ Here you find some of my personal projects I did (and continue doing) in spare t
 
 <p align="center">
   <strong>Jumper buggy</strong><br>
-  <small>A 3D action and car simulation game for iOS. It uses the old OpenDynamics Engine for physics simulation. Written entirely in C++/OpenGL. <a href="https://www.youtube.com/watch?v=I5MDCqC-wmQ">Video from here</a> </small>
+  <small>A 3D action and car simulation game for iOS. It uses the old OpenDynamics Engine for physics simulation. Written in C++/OpenGL. <a href="https://www.youtube.com/watch?v=I5MDCqC-wmQ">Video from here</a> </small>
 </p>
 
 <p align="center">
@@ -134,7 +134,7 @@ Here you find some of my personal projects I did (and continue doing) in spare t
 
 <p align="center">
   <strong>Mosaic Puzzle</strong><br>
-  <small>The goal of  this educational game is to help children develop their eye<->hand coordination skills. Written entirely in C++/OpenGL.</small>
+  <small>The goal of  this educational game is to help children develop their eye<->hand coordination skills. Written in C++/OpenGL.</small>
 </p>
 
 <p align="center">
@@ -143,7 +143,7 @@ Here you find some of my personal projects I did (and continue doing) in spare t
 
 <p align="center">
   <strong>Camera Art effects</strong><br>
-  <small>It is  photography application for iOS ( iPhone, iPod and iPad) that lets you apply filter and effects to your camera and in real time. It uses optimized GLSL shaders to run in realtime on an iPhone 3GS. Supported filters: Cartoon; Old Movie, Pencil, Colored Pencil, Bulge, Dent, Rain, ... Written entirely in C++/OpenGL.</small>
+  <small>It is  photography application for iOS ( iPhone, iPod and iPad) that lets you apply filter and effects to your camera and in real time. It uses optimized GLSL shaders to run in realtime on an iPhone 3GS. Supported filters: Cartoon; Old Movie, Pencil, Colored Pencil, Bulge, Dent, Rain, ... Written in C++/OpenGL.</small>
 </p>
 
 <p align="center">
