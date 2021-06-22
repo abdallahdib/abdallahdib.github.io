@@ -7,7 +7,7 @@ My research interests are at the intersection of computer vision, machine learni
 <p align="center">
 <a href="https://www.linkedin.com/in/abdallah-dib-19912b25/"><img src="images/linkedin.png" height="40" ></a>
 <a href="https://scholar.google.fr/citations?user=yb6wpSEAAAAJ&hl=fr"><img src="images/scholar.png" height="40" ></a>
-<a href="https://twitter.com/abdallah_dib"><img src="images/twitter.png" height="40" ></a></center>
+<a href="https://twitter.com/abdallah_dib"><img src="images/twitter.png" height="40" ></a>
 </p>
 
 ## Publications
