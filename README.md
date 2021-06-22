@@ -105,17 +105,17 @@ Here you find some of my personal projects I did (and continue doing) in spare t
 </p>
 
 <p align="center">
- 	<img src="images/ios/waterScene.png" width="350" ><img src="images/ios/fileLoader.png" width="350" >
-	<img src="images/ios/sceneWithBump.png" width="350" ><img src="images/ios/gpuSkinning.png" width="350" >
+ <img src="images/ios/waterScene.png" width="350" ><img src="images/ios/fileLoader.png" width="350" >
+<img src="images/ios/sceneWithBump.png" width="350" ><img src="images/ios/gpuSkinning.png" width="350" >
 </p>
 
 <p align="center">
-  <strong>Physically based rendering engine</strong><br>
-  <small>I Continue developing  and maintaining this graphics engine. It is used mainly for visualizing 3D models. it is written in pure C++/OpenGL and i ported it to many platforms: windows/mac/linux/iOS/Android(via JNI)/Web(via Emiscripten). It implements physically based rendering with various BRDF models (Cook-Torrance, Phong), Deferred shading, Ambient occlusion, Shadow mapping, normal and parallax mapping. It has built-in 2D GUI support via 'imgui'. It uses Bullet for phyiscs simulation. It implements Frustum culling and supports large scale terrain rendering. </small>
+ <strong>Physically based rendering engine</strong><br>
+ <small>I Continue developing  and maintaining this graphics engine. It is used mainly for visualizing 3D models. it is written in pure C++/OpenGL and i ported it to many platforms: windows/mac/linux/iOS/Android(via JNI)/Web(via Emiscripten). It implements physically based rendering with various BRDF models (Cook-Torrance, Phong), Deferred shading, Ambient occlusion, Shadow mapping, normal and parallax mapping. It has built-in 2D GUI support via 'imgui'. It uses Bullet for phyiscs simulation. It implements Frustum culling and supports large scale terrain rendering. </small>
 </p>
 
 <p align="center">
-  <img src="images/pbr/pbr1.png" width="300" ><img src="images/pbr/pbr2.png" width="300" >
+<img src="images/pbr/pbr1.png" width="300" ><img src="images/pbr/pbr2.png" width="300" >
 </p>
 
 
