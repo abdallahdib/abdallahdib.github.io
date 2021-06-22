@@ -17,8 +17,7 @@ My research interests are at the intersection of computer vision, machine learni
   <strong>Practical Face Reconstruction via Differentiable Ray Rracing</strong><br>
   <small>Abdallah Dib, Gaurav Bharaj, Junghyun Ahn, Cédric Thébault, Philippe-Henri Gosselin, Marco Romeo, Louis Chevallier</small><br>
   <i>Computer Graphics Forum, Eurographics' 2021</i><br>
-  <a href="https://arxiv.org/abs/2101.05356">abstract</a> |
-  <a href="https://arxiv.org/pdf/2101.05356.pdf">paper</a> |
+  <a href="https://arxiv.org/abs/2101.05356">paper</a> |
   <a href="https://youtu.be/bPFp0oZ9plg">video</a>
   <br><br>
   <img src="images/dib2021practical.png" width="500" >
@@ -26,16 +25,11 @@ My research interests are at the intersection of computer vision, machine learni
 </p>
 
 
- 
-
-
-
 <p align="center">
   <strong>Towards High Fidelity Monocular Face Reconstruction with Rich Reflectance using Self-supervised Learning and Ray Tracing</strong><br>
   <small>Abdallah Dib, Cedric Thebault, Junghyun Ahn, Philippe-Henri Gosselin, Christian Theobalt, Louis Chevallier</small><br>
   <i>arXiv print</i><br>
-  <a href="https://arxiv.org/abs/2103.15432">abstract</a> |
-  <a href="https://arxiv.org/pdf/2103.15432.pdf">paper</a> |
+  <a href="https://arxiv.org/abs/2103.15432">paper</a> |
   <a href="#">video (comming soon)</a>
   <br><br>
   <img src="images/dib2021towards.png" width="500">
@@ -45,8 +39,7 @@ My research interests are at the intersection of computer vision, machine learni
   <strong>PhotoApp: Photorealistic Appearance Editing of Head Portraits</strong><br>
   <small>Mallikarjun B R, Ayush Tewari, Abdallah Dib, Tim Weyrich, Bernd Bickel, Hans-Peter Seidel, Hanspeter Pfister, Wojciech Matusik, Louis Chevallier, Mohamed Elgharib, Christian Theobalt</small><br>
   <i>ACM Transactions on Graphics (SIGGRAPH Asia 2021)</i><br>
-  <a href="https://arxiv.org/abs/2103.07658">abstract</a> |
-  <a href="https://arxiv.org/pdf/2103.07658.pdf">paper</a> |
+  <a href="https://arxiv.org/abs/2103.07658">paper</a> |
   <a href="http://gvv.mpi-inf.mpg.de/projects/PhotoApp/">video</a>
   <br><br>
   <img src="images/malikarjun2021photoapp.png" width="500">
