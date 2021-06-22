@@ -103,8 +103,9 @@ Here you find some of my personal projects I did (and continue doing) in spare t
   <strong>OpenGLES 2.0 tutorials (with source code)</strong><br>
   <small>In 2013, I wrote educational tutorials on Graphics programming for iOS using OpenGLES shading language. Tutorials were written in C++ with a clean and intuitive API for beginners. It covers: 3D mesh loader, camera movement, normal mappping, gpu skinning, environment mapping, shadow mapping. Code source can be found on my old website from <a href="https://virtual-vision.net/download/tutorials.zip">here</a> </small>
 </p>
-	<p align="center">
-  <img src="images/ios/waterScene.png" width="350" ><img src="images/ios/fileLoader.png" width="350" >
+
+<p align="center">
+ 	<img src="images/ios/waterScene.png" width="350" ><img src="images/ios/fileLoader.png" width="350" >
 	<img src="images/ios/sceneWithBump.png" width="350" ><img src="images/ios/gpuSkinning.png" width="350" >
 </p>
 
@@ -112,7 +113,8 @@ Here you find some of my personal projects I did (and continue doing) in spare t
   <strong>Physically based rendering engine</strong><br>
   <small>I Continue developing  and maintaining this graphics engine. It is used mainly for visualizing 3D models. it is written in pure C++/OpenGL and i ported it to many platforms: windows/mac/linux/iOS/Android(via JNI)/Web(via Emiscripten). It implements physically based rendering with various BRDF models (Cook-Torrance, Phong), Deferred shading, Ambient occlusion, Shadow mapping, normal and parallax mapping. It has built-in 2D GUI support via 'imgui'. It uses Bullet for phyiscs simulation. It implements Frustum culling and supports large scale terrain rendering. </small>
 </p>
-	<p align="center">
+
+<p align="center">
   <img src="images/pbr/pbr1.png" width="300" ><img src="images/pbr/pbr2.png" width="300" >
 </p>
 
@@ -121,12 +123,14 @@ Here you find some of my personal projects I did (and continue doing) in spare t
   <strong>iOS Game programming</strong><br>
   <small>In 2012, I started developing mobile games and apps. In 2017, I removed these apps from App store (Because i didn't have enough time to maintain them). Below are these apps/games.  <strong>The code source for these apps can be shared upon request.</strong></small>
 </p>
+
 <p align="center">
   <strong>Jumper buggy</strong><br>
   <small>A 3D action and car simulation game for iOS. It uses the old OpenDynamics Engine for physics simulation. Written entirely in C++/OpenGL. <a href="https://www.youtube.com/watch?v=I5MDCqC-wmQ">Video from here</a> </small>
 </p>
-	<p align="center">
-  <img src="images/ios/jumper1.png" width="200" ><img src="images/ios/jumper2.png" width="200" >
+
+<p align="center">
+  	<img src="images/ios/jumper1.png" width="200" ><img src="images/ios/jumper2.png" width="200" >
 	<img src="images/ios/jumper3.png" width="200" ><img src="images/ios/jumper3.png" width="200" >
 </p>
 
@@ -136,7 +140,8 @@ Here you find some of my personal projects I did (and continue doing) in spare t
   <strong>Mosaic Puzzle</strong><br>
   <small>The goal of  this educational game is to help children develop their eye<->hand coordination skills. Written entirely in C++/OpenGL.</small>
 </p>
-	<p align="center">
+
+<p align="center">
   <img src="images/ios/mos1.PNG" width="300" ><img src="images/ios/mos2.PNG" width="300" >
 </p>
 
@@ -147,8 +152,9 @@ Here you find some of my personal projects I did (and continue doing) in spare t
   <strong>Camera Art effects</strong><br>
   <small>It is  photography application for iOS ( iPhone, iPod and iPad) that lets you apply filter and effects to your camera and in real time. It uses optimized GLSL shaders to run in realtime on an iPhone 3GS. Supported filters: Cartoon; Old Movie, Pencil, Colored Pencil, Bulge, Dent, Rain, ... Written entirely in C++/OpenGL.</small>
 </p>
-	<p align="center">
-  <img src="images/ios/art1.JPG" width="180" ><img src="images/ios/art2.PNG" width="180" >
+
+<p align="center">
+	<img src="images/ios/art1.JPG" width="180" ><img src="images/ios/art2.PNG" width="180" >
 	<img src="images/ios/art3.JPG" width="180" ><img src="images/ios/art4.PNG" width="180" >
 </p>
 
