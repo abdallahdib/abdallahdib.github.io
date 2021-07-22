@@ -28,7 +28,7 @@ My research interests are at the intersection of computer vision, machine learni
 <p align="center">
   <strong>Towards High Fidelity Monocular Face Reconstruction with Rich Reflectance using Self-supervised Learning and Ray Tracing</strong><br>
   <small>Abdallah Dib, Cedric Thebault, Junghyun Ahn, Philippe-Henri Gosselin, Christian Theobalt, Louis Chevallier</small><br>
-  <i>arXiv print</i><br>
+  <i>ICCV 2021 </i><br>
   <a href="https://arxiv.org/abs/2103.15432">paper</a> |
   <a href="#">video (comming soon)</a>
   <br><br>
