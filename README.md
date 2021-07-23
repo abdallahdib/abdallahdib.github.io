@@ -30,7 +30,7 @@ My research interests are at the intersection of computer vision, machine learni
   <small>Abdallah Dib, Cedric Thebault, Junghyun Ahn, Philippe-Henri Gosselin, Christian Theobalt, Louis Chevallier</small><br>
   <i>International Conference on Computer Vision (ICCV 2021) </i><br>
   <a href="https://arxiv.org/abs/2103.15432">paper</a> |
-  <a href="#">video (comming soon)</a>
+  <a href="https://www.youtube.com/watch?v=VVr_bbXEjxE">video</a>
   <br><br>
   <img src="images/dib2021towards.png" width="500">
 </p>
