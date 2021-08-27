@@ -3,6 +3,11 @@
   Description: Abdallah Dib website, computer vision and machine learning scientist (computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics)
   Author: Abdallah Dib
   -->
+  
+  <meta name='keywords' content='abdallah dib, machine learning, computer vision, computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics'>
+ 
+ <meta name="description" content="Abdallah Dib website, computer vision and machine learning scientist (computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics)">
+  
 ## About me
 
 I am a senior research scientist working at InterDigital R&I France since 2019. Previously, I held the same position at Technicolor research (2017-2019) and I worked as a research engineer at Inria (from 2008-2012).
