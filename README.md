@@ -1,4 +1,4 @@
-<head<meta name="google-site-verification" content="9b6CJI3etMj8jvmNQ5KUBWYhwSXCMKGOanCxbq16y90" /></head>
+<head><meta name="google-site-verification" content="9b6CJI3etMj8jvmNQ5KUBWYhwSXCMKGOanCxbq16y90" /></head>
 
 <!--
 Title: Abdallah Dib personal website
