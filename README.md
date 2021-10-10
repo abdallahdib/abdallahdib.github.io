@@ -1,9 +1,9 @@
 <!--
+<meta name="google-site-verification" content="9b6CJI3etMj8jvmNQ5KUBWYhwSXCMKGOanCxbq16y90" />
 Title: Abdallah Dib personal website
   Description: Abdallah Dib website, computer vision and machine learning scientist (computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics)
   Author: Abdallah Dib
   -->
-  <meta name="google-site-verification" content="9b6CJI3etMj8jvmNQ5KUBWYhwSXCMKGOanCxbq16y90">
   <meta name='keywords' content='abdallah dib, machine learning, computer vision, computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics'>
  
  <meta name="description" content="Abdallah Dib website, computer vision and machine learning scientist (computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics)">
