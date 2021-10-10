@@ -1,6 +1,5 @@
-<head><meta name="google-site-verification" content="9b6CJI3etMj8jvmNQ5KUBWYhwSXCMKGOanCxbq16y90" /></head>
-
 <!--
+<head><meta name="google-site-verification" content="9b6CJI3etMj8jvmNQ5KUBWYhwSXCMKGOanCxbq16y90" /></head>
 Title: Abdallah Dib personal website
   Description: Abdallah Dib website, computer vision and machine learning scientist (computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics)
   Author: Abdallah Dib
