@@ -9,7 +9,7 @@ Title: Abdallah Dib personal website
   
 ## About me
 
-I am a senior research scientist working at InterDigital R&I France since 2019. Previously, I held the same position at Technicolor research (2017-2019) and I worked as a research engineer at Inria (from 2008-2012).
+Starting from May 2022, I will be joining Ubisoft La Forge as a research scientist. Before that I worked as a senior research scientist at InterDigital R&I France since 2019. Previously, I held the same position at Technicolor research (2017-2019) and I worked as a research engineer at Inria (from 2008-2012).
 
 I received my Phd in Computer Science from Inria research center in 2016.
 
