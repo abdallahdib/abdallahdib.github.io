@@ -23,6 +23,9 @@ My research interests are at the intersection of computer vision, machine learni
 <a href="mailto:deeb.abdallah@gmail.com">Looking for internship/PhD? click here to contact me by email, I may have some cool open positions for you</a>.<br>
 </p>
 
+## News
+* **21/04/2022**: NextFace is a lightweight open source library, written in pytorch, for high fidelity face reconstruction. Check it from here: https://github.com/abdallahdib/NextFace
+
 ## Publications
 
 <p align="center">
