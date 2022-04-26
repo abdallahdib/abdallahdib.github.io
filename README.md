@@ -24,7 +24,7 @@ My research interests are at the intersection of computer vision, machine learni
 </p>
 
 ## News
-* **21/04/2022**: NextFace is a lightweight open source library, written in pytorch, for high fidelity face reconstruction. Check it from here: https://github.com/abdallahdib/NextFace
+* **21/04/2022**: NextFace is a lightweight open source library, written in pytorch, for high fidelity face reconstruction. Check it from [https://github.com/abdallahdib/NextFace]( https://github.com/abdallahdib/NextFace)
 
 ## Publications
 
