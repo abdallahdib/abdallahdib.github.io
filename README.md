@@ -33,7 +33,8 @@ My research interests are at the intersection of computer vision, machine learni
   <small>Abdallah Dib, Gaurav Bharaj, Junghyun Ahn, Cédric Thébault, Philippe-Henri Gosselin, Marco Romeo, Louis Chevallier</small><br>
   <i>Computer Graphics Forum, Eurographics' 2021</i><br>
   <a href="https://arxiv.org/abs/2101.05356">paper</a> |
-  <a href="https://youtu.be/bPFp0oZ9plg">video</a>
+  <a href="https://youtu.be/bPFp0oZ9plg">video</a> |
+  <a href="https://github.com/abdallahdib/NextFace">code</a>
   <br><br>
   <img src="images/dib2021practical.png" width="500" >
 
