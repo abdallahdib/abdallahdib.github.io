@@ -1,15 +1,15 @@
 <!--
 Title: Abdallah Dib personal website
-  Description: Abdallah Dib website, computer vision and machine learning scientist (computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics)
+  Description: Abdallah Dib Deeb website, computer vision and machine learning scientist (computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics)
   Author: Abdallah Dib
   -->
-  <meta name='keywords' content='abdallah dib, machine learning, computer vision, computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics'>
+  <meta name='keywords' content='abdallah dib, abdallah deeb, machine learning, computer vision, computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics'>
  
- <meta name="description" content="Abdallah Dib website, computer vision and machine learning scientist (computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics)">
+ <meta name="description" content="Abdallah Dib Deeb website, computer vision and machine learning scientist (computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics)">
   
 ## About me
 
-Starting from May 2022, I will be joining Ubisoft La Forge as a research scientist. Before that I worked as a senior research scientist at InterDigital R&I France since 2019. Previously, I held the same position at Technicolor research (2017-2019) and I worked as a research engineer at Inria (from 2008-2012).
+I am a research scientist working at Ubisoft La Forge (Montreal). Before that I worked as a senior research scientist at InterDigital R&I France since 2019. Previously, I held the same position at Technicolor research (2017-2019) and I worked as a research engineer at Inria (from 2008-2012).
 
 I received my Phd in Computer Science from Inria research center in 2016.
 
@@ -29,6 +29,17 @@ My research interests are at the intersection of computer vision, machine learni
 ## Publications
 
 <p align="center">
+  <strong>s2f2: self-supervised high fidelity face reconstruction from monocular image</strong><br>
+  <small>Abdallah Dib, Cedric Thebault, Junghyun Ahn, Philippe-Henri Gosselin, Louis Chevallier</small><br>
+  <i>ArXiv' 2022</i><br>
+  <a href="https://arxiv.org/abs/2203.07732">paper</a> |
+  video (comming soon) |
+  <br><br>
+  <img src="images/dib2022s2f2.jpg" width="500" >
+
+</p>
+
+<p align="center">
   <strong>Practical Face Reconstruction via Differentiable Ray Rracing</strong><br>
   <small>Abdallah Dib, Gaurav Bharaj, Junghyun Ahn, Cédric Thébault, Philippe-Henri Gosselin, Marco Romeo, Louis Chevallier</small><br>
   <i>Computer Graphics Forum, Eurographics' 2021</i><br>
@@ -46,7 +57,8 @@ My research interests are at the intersection of computer vision, machine learni
   <small>Abdallah Dib, Cedric Thebault, Junghyun Ahn, Philippe-Henri Gosselin, Christian Theobalt, Louis Chevallier</small><br>
   <i>International Conference on Computer Vision (ICCV 2021) </i><br>
   <a href="https://arxiv.org/abs/2103.15432">paper</a> |
-  <a href="https://www.youtube.com/watch?v=VVr_bbXEjxE">video</a>
+  <a href="https://www.youtube.com/watch?v=VVr_bbXEjxE">video</a> |
+  <a href="https://github.com/abdallahdib/DeepNextFace">code</a>
   <br><br>
   <img src="images/dib2021towards.jpg" width="500">
 </p>
