@@ -36,7 +36,7 @@ My research interests are at the intersection of computer vision, machine learni
   <a href="https://youtu.be/bPFp0oZ9plg">video</a> |
   <a href="https://github.com/abdallahdib/NextFace">code</a>
   <br><br>
-  <img src="images/dib2021practical.png" width="500" >
+  <img src="images/dib2021practical.jpg" width="500" >
 
 </p>
 
@@ -48,7 +48,7 @@ My research interests are at the intersection of computer vision, machine learni
   <a href="https://arxiv.org/abs/2103.15432">paper</a> |
   <a href="https://www.youtube.com/watch?v=VVr_bbXEjxE">video</a>
   <br><br>
-  <img src="images/dib2021towards.png" width="500">
+  <img src="images/dib2021towards.jpg" width="500">
 </p>
 
 <p align="center">
@@ -58,7 +58,7 @@ My research interests are at the intersection of computer vision, machine learni
   <a href="https://arxiv.org/abs/2103.07658">paper</a> |
   <a href="http://gvv.mpi-inf.mpg.de/projects/PhotoApp/">video</a>
   <br><br>
-  <img src="images/malikarjun2021photoapp.png" width="500">
+  <img src="images/malikarjun2021photoapp.jpg" width="500">
 </p>
 
 <p align="center">
@@ -67,7 +67,7 @@ My research interests are at the intersection of computer vision, machine learni
   <i>The Digital Production Symposium (DigiPro 2020)</i><br>
   <a href="https://dl.acm.org/doi/pdf/10.1145/3403736.3403938">paper</a>
   <br><br>
-  <img src="images/dib2020facelab2.png" width="500">
+  <img src="images/dib2020facelab2.jpg" width="500">
 </p>
 
 
@@ -78,7 +78,7 @@ My research interests are at the intersection of computer vision, machine learni
   <a href="https://hal.inria.fr/hal-01203638/document">paper</a> |
   <a href="https://www.youtube.com/watch?v=fEIChcc0yoY/">video</a>
   <br><br>
-  <img src="images/dib2015pose.png" width="500">
+  <img src="images/dib2015pose.jpg" width="500">
 </p>
 
 <p align="center">
@@ -88,7 +88,7 @@ My research interests are at the intersection of computer vision, machine learni
   <a href="https://hal.inria.fr/hal-01212043/file/preprint.pdf">paper</a> |
   <a href="https://youtu.be/3zotv04RUcs">video</a>
   <br><br>
-  <img src="images/dib2015robust.png" width="500">
+  <img src="images/dib2015robust.jpg" width="500">
 </p>
 
 <p align="center">
@@ -98,7 +98,7 @@ My research interests are at the intersection of computer vision, machine learni
   <a href="https://hal.inria.fr/file/index/docid/654041/filename/kinect.pdf">paper</a> |
 	<a href="https://youtu.be/wXQ_DUkHOMc">video</a>
   <br><br>
-  <img src="images/dib2011hmm.png" width="500">
+  <img src="images/dib2011hmm.jpg" width="500">
 </p>
 
 ##  Personal Devs
