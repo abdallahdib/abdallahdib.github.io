@@ -32,9 +32,10 @@ My research interests are at the intersection of computer vision, machine learni
 <p align="center">
   <strong>S2F2: Self-Supervised High Fidelity Face Reconstruction From Monocular Image</strong><br>
   <small>Abdallah Dib, Cedric Thebault, Junghyun Ahn, Philippe-Henri Gosselin, Louis Chevallier</small><br>
-  <i>ArXiv' 2022</i><br>
+  <i>International Conference on Automatic Face and Gesture Recognition FG 2023
+</i><br>
   <a href="https://arxiv.org/abs/2203.07732">pre-print</a> |
-  video (comming soon) |
+  <a href="https://youtu.be/DiHpZjx1sxc">video</a> |
   <br><br>
   <img src="images/dib2022s2f2.jpg" width="500" >
 
