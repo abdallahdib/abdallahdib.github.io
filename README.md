@@ -36,7 +36,8 @@ My research interests are at the intersection of computer vision, machine learni
   <i> IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR 2024)
 </i><br>
   <a href="https://arxiv.org/abs/2312.13091">pre-print</a> |
-  <a href="https://youtu.be/DiHpZjx1sxc">video</a> |
+  <a href="https://ubisoft-laforge.github.io/character/mosar/">Project page</a> |
+  <a href="https://github.com/ubisoft/ubisoft-laforge-FFHQ-UV-Intrinsics">Dataset</a> |
   <br><br>
   <video width="100%" preload="auto" muted controls>
     <source src="images/mosar.mov" type="video/mp4">
