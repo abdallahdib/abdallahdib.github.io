@@ -39,7 +39,7 @@ My research interests are at the intersection of computer vision, machine learni
   <a href="https://youtu.be/DiHpZjx1sxc">video</a> |
   <br><br>
   <video width="100%" preload="auto" muted controls>
-    <source src="images/mosar.mp4" type="video/mp4">
+    <source src="images/mosar.mov" type="video/mov">
 </video>
 </p>
 
