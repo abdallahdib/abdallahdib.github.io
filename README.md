@@ -55,7 +55,9 @@ My research interests are at the intersection of computer vision, machine learni
   <a href="https://arxiv.org/abs/2203.07732">pre-print</a> |
   <a href="https://youtu.be/DiHpZjx1sxc">video</a> |
   <br><br>
-  <img src="images/dib2022s2f2.jpg" width="500" >
+  <video width="100%" preload="auto" muted controls>
+    <source src="images/s2f2.mp4" type="video/mp4">
+</video>
 
 </p>
 
