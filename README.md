@@ -33,13 +33,13 @@ My research interests are at the intersection of computer vision, machine learni
 <p align="center">
   <strong>MoSAR: Monocular Semi-Supervised Model for Avatar Reconstruction using Differentiable Shading</strong><br>
   <small>Abdallah Dib, Luiz Gustavo Hafemann, Emeline Got, Trevor Anderson, Amin Fadaeinejad, Rafael M. O. Cruz, Marc-Andre Carbonneau</small><br>
-  <i> IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) 2024
+  <i> IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR 2024)
 </i><br>
   <a href="https://arxiv.org/abs/2312.13091">pre-print</a> |
   <a href="https://youtu.be/DiHpZjx1sxc">video</a> |
   <br><br>
   <video width="100%" preload="auto" muted controls>
-    <source src="images/mosar.mov" type="video/mov">
+    <source src="images/mosar.mov" type="video/mp4">
 </video>
 </p>
 
