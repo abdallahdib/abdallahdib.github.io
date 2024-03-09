@@ -83,7 +83,9 @@ My research interests are at the intersection of computer vision, machine learni
   <a href="https://www.youtube.com/watch?v=VVr_bbXEjxE">video</a> |
   <a href="https://github.com/abdallahdib/DeepNextFace">code</a>
   <br><br>
-  <img src="images/dib2021towards2.jpg" width="500">
+  <video width="100%" preload="auto" muted controls>
+    <source src="images/towards.mp4" type="video/mp4">
+</video>
 </p>
 
 <p align="center">
