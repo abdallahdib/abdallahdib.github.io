@@ -8,7 +8,6 @@ Title: Abdallah Dib personal website
  <meta name="description" content="Abdallah Dib Deeb website, computer vision and machine learning scientist (computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics)">
   
 ## About me
-
 I am a research scientist working at Ubisoft La Forge (Montreal). Before that I worked as a senior research scientist at InterDigital R&I France since 2019. Previously, I held the same position at Technicolor research (2017-2019) and I worked as a research engineer at Inria (from 2008-2012).
 
 I received my Phd in Computer Science from Inria research center in 2016.
@@ -26,6 +25,10 @@ My research interests are at the intersection of computer vision, machine learni
 ## News
 * **18/05/2022**: DeepNextFace is a 3D face reconstruction library from a single monocular RGB image via deep convolutional neural networks and differentiable ray tracing. Check it from [https://github.com/abdallahdib/DeepNextFace]( https://github.com/abdallahdib/DeepNextFace)
 * **21/04/2022**: NextFace is a lightweight open source library, written in pytorch, for high fidelity face reconstruction. Check it from [https://github.com/abdallahdib/NextFace]( https://github.com/abdallahdib/NextFace)
+
+<video muted autoplay controls>
+    <source src="images/mosar.mp4" type="video/mp4">
+</video>
 
 ## Publications
 
