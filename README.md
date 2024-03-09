@@ -20,7 +20,7 @@ My research interests are at the intersection of computer vision, machine learni
 </p>
 <p align="center">
 <!---<a href="mailto:deeb.abdallah@gmail.com">Looking for internship/PhD? click here to contact me by email, I may have some cool open positions for you</a>.<br>-->
-<a href="mailto:deeb.abdallah@gmail.com">I'm actively searchgin for PhD student(s) to join our team and contribute to pushing the boundaries of realistic avatar creation. If you're motivated, passionate, and interested in working on this topic, please send me an email with your CV.</a><br>
+<a href="mailto:deeb.abdallah@gmail.com">I'm actively searching for PhD student(s) to join our team and contribute to pushing the boundaries of realistic avatar creation. If you're motivated, passionate, and interested in working on this topic, please send me an email with your CV.</a><br>
 </p>
 
 ## News
