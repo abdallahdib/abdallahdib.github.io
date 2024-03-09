@@ -29,6 +29,7 @@ My research interests are at the intersection of computer vision, machine learni
 * **01/02/2023**: S2F2 paper got accepted to FG2023. S2F2 is a robust self-supervised model that esimate 3D shape and reflectance from a monocular image. More details from [Here](https://youtu.be/DiHpZjx1sxc)
 * **18/05/2022**: DeepNextFace is a 3D face reconstruction library from a single monocular RGB image via deep convolutional neural networks and differentiable ray tracing. Check it from [https://github.com/abdallahdib/DeepNextFace]( https://github.com/abdallahdib/DeepNextFace)
 * **21/04/2022**: NextFace is a lightweight open source library, written in pytorch, for high fidelity face reconstruction. Check it from [https://github.com/abdallahdib/NextFace]( https://github.com/abdallahdib/NextFace)
+* **09/03/2021** Our paper on monocular 3D face reconstruction got accepted to EuroGraphics 2021. We achieve realistic 3D face reconstruction from a single image. More details from [Here](https://github.com/abdallahdib/NextFace)
 
 
 ## Publications
