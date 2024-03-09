@@ -26,11 +26,24 @@ My research interests are at the intersection of computer vision, machine learni
 * **18/05/2022**: DeepNextFace is a 3D face reconstruction library from a single monocular RGB image via deep convolutional neural networks and differentiable ray tracing. Check it from [https://github.com/abdallahdib/DeepNextFace]( https://github.com/abdallahdib/DeepNextFace)
 * **21/04/2022**: NextFace is a lightweight open source library, written in pytorch, for high fidelity face reconstruction. Check it from [https://github.com/abdallahdib/NextFace]( https://github.com/abdallahdib/NextFace)
 
-<video muted autoplay controls>
+<video width="100%" preload="auto" muted controls>
     <source src="images/mosar.mp4" type="video/mp4">
 </video>
 
+
 ## Publications
+<p align="center">
+  <strong>MoSAR: Monocular Semi-Supervised Model for Avatar Reconstruction using Differentiable Shading</strong><br>
+  <small>Abdallah Dib, Luiz Gustavo Hafemann, Emeline Got, Trevor Anderson, Amin Fadaeinejad, Rafael M. O. Cruz, Marc-Andre Carbonneau</small><br>
+  <i> IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR) 2024
+</i><br>
+  <a href="https://arxiv.org/abs/2312.13091">pre-print</a> |
+  <a href="https://youtu.be/DiHpZjx1sxc">video</a> |
+  <br><br>
+  <video width="30%" preload="auto" muted controls>
+    <source src="images/mosar.mp4" type="video/mp4">
+</video>
+</p>
 
 <p align="center">
   <strong>S2F2: Self-Supervised High Fidelity Face Reconstruction From Monocular Image</strong><br>
