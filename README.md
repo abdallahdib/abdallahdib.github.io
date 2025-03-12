@@ -36,7 +36,7 @@ My research interests are at the intersection of computer vision, machine learni
 ## Publications
 <p align="center">
   <strong>SEREP: Semantic Facial Expression Representation for Robust In-the-Wild Capture and Retargeting</strong><br>
-  <small>Josi, Arthur and Hafemann, Luiz Gustavo and Dib, Abdallah and Got, Emeline and Cruz, Rafael MO and Carbonneau, Marc-Andre</small><br>
+  <small>Arthur Josi, Luiz Gustavo Hafemann, Abdallah Dib, Emeline Got, Rafael MO Cruz, Marc-Andre Carbonneau</small><br>
   <i> ArXiv 2025
 </i><br>
   <a href="[https://arxiv.org/abs/2312.13091](https://arxiv.org/pdf/2412.14371)">pre-print</a> |
