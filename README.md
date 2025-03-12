@@ -35,13 +35,26 @@ My research interests are at the intersection of computer vision, machine learni
 
 ## Publications
 <p align="center">
+  <strong>SEREP: Semantic Facial Expression Representation for Robust In-the-Wild Capture and Retargeting</strong><br>
+  <small>Josi, Arthur and Hafemann, Luiz Gustavo and Dib, Abdallah and Got, Emeline and Cruz, Rafael MO and Carbonneau, Marc-Andre</small><br>
+  <i> ArXiv
+</i><br>
+  <a href="[https://arxiv.org/abs/2312.13091](https://arxiv.org/pdf/2412.14371)">pre-print</a> |
+  <a href="[https://ubisoft-laforge.github.io/character/mosar/](https://ubisoft-laforge.github.io/character/serep/)">Project page</a> |
+  <br><br>
+  <video width="100%" preload="auto" muted controls>
+    <source src="images/serep.mp4" type="video/mp4">
+</video>
+</p>
+
+<p align="center">
   <strong>MoSAR: Monocular Semi-Supervised Model for Avatar Reconstruction using Differentiable Shading</strong><br>
   <small>Abdallah Dib, Luiz Gustavo Hafemann, Emeline Got, Trevor Anderson, Amin Fadaeinejad, Rafael M. O. Cruz, Marc-Andre Carbonneau</small><br>
   <i> IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR 2024)
 </i><br>
   <a href="https://arxiv.org/abs/2312.13091">pre-print</a> |
   <a href="https://ubisoft-laforge.github.io/character/mosar/">Project page</a> |
-  <a href="https://github.com/ubisoft/ubisoft-laforge-FFHQ-UV-Intrinsics">Dataset</a> |
+  <a href="https://github.com/ubisoft/ubisoft-laforge-FFHQ-UV-Intrinsics">Dataset</a>
   <br><br>
   <video width="100%" preload="auto" muted controls>
     <source src="images/mosar.mov" type="video/mp4">
