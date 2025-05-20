@@ -40,8 +40,9 @@ My research interests are at the intersection of computer vision, machine learni
   <small>Amin Fadaeinejad, Abdallah Dib, Luiz Gustavo Hafemann, Emeline Got, Trevor Anderson, Amaury Depierre, Nikolaus F. Troje, Marcus A Brubaker, Marc-Andre Carbonneau</small><br>
   <i> CVPR Workshops 2025 (CVEU) 
 </i><br>
-  <a href="[https://arxiv.org/pdf/2505.04387](https://arxiv.org/pdf/2505.04387)">pre-print</a> |
-  <a href="[https://ubisoft-laforge.github.io/character/GeoAwareTextures3D/index.html)">Project page</a> |
+ <a href="https://arxiv.org/pdf/2505.04387">pre-print</a> |
+  <a href="https://ubisoft-laforge.github.io/character/GeoAwareTextures3D/index.html">Project page</a> 
+  
   <br><br>
   <img src="images/geomAware_Fadaeinejad.png" width="500">
 </p>
@@ -51,8 +52,8 @@ My research interests are at the intersection of computer vision, machine learni
   <small>Arthur Josi, Luiz Gustavo Hafemann, Abdallah Dib, Emeline Got, Rafael MO Cruz, Marc-Andre Carbonneau</small><br>
   <i> ArXiv 2025
 </i><br>
-  <a href="[https://arxiv.org/abs/2312.13091](https://arxiv.org/pdf/2412.14371)">pre-print</a> |
-  <a href="[https://ubisoft-laforge.github.io/character/mosar/](https://ubisoft-laforge.github.io/character/serep/)">Project page</a> |
+<a href="https://arxiv.org/pdf/2412.14371">pre-print</a> |
+  <a href="https://ubisoft-laforge.github.io/character/serep/">Project page</a> 
   <br><br>
   <video width="100%" preload="auto" muted controls>
     <source src="images/serep.mp4" type="video/mp4">
