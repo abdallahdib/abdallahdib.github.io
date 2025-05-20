@@ -42,7 +42,7 @@ My research interests are at the intersection of computer vision, machine learni
   <a href="[https://arxiv.org/pdf/2505.04387](https://arxiv.org/pdf/2505.04387)">pre-print</a> |
   <a href="[https://ubisoft-laforge.github.io/character/GeoAwareTextures3D/index.html)">Project page</a> |
   <br><br>
-  <img src="images/malikarjun2021photoapp.jpg" width="500">
+  <img src="images/geomAware_Fadaeinejad.png" width="500">
 </p>
 
 <p align="center">
