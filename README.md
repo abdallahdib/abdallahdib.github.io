@@ -38,7 +38,7 @@ My research interests are at the intersection of computer vision, machine learni
 <p align="center">
   <strong>Geometry-Aware Texture Generation for 3D Head Modeling with Artist-driven Control</strong><br>
   <small>Amin Fadaeinejad, Abdallah Dib, Luiz Gustavo Hafemann, Emeline Got, Trevor Anderson, Amaury Depierre, Nikolaus F. Troje, Marcus A Brubaker, Marc-Andre Carbonneau</small><br>
-  <i> CVPR Workshops 2025 (CVEU) 
+  <i> AI for Creative Visual Content Generation Editing and Understanding (CVEU), CVPR 2025 
 </i><br>
  <a href="https://arxiv.org/pdf/2505.04387">pre-print</a> |
   <a href="https://ubisoft-laforge.github.io/character/GeoAwareTextures3D/index.html">Project page</a> 
