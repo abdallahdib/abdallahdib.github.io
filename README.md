@@ -24,7 +24,7 @@ My research interests are at the intersection of computer vision, machine learni
 </p>
 
 ## News
-* **20/05/2025**: One paper accepted to 'AI for Creative Visual Content Generation Editing and Understanding' (CVPR workshop 2025). We propose a texture generator model giving artists control over shape, skin tone and fine details. More details from [Here](https://ubisoft-laforge.github.io/character/GeoAwareTextures3D/index.html)
+* **20/05/2025**: One paper accepted to 'AI for Creative Visual Content Generation Editing and Understanding' (CVEU), CVPR  2025. We propose a texture generator model giving artists control over shape, skin tone and fine details. More details from [Here](https://ubisoft-laforge.github.io/character/GeoAwareTextures3D/index.html)
 * **09/03/2024**: We released **FFHQ-UV-Intrinsics** dataset that contains intrinsics texture maps for 10K subjects at HD resolution. Download it from [here](https://github.com/ubisoft/ubisoft-laforge-FFHQ-UV-Intrinsics) 
 * **01/03/2024**: Mosar paper got accepted to CVPR 2024. MoSAR turns a portrait image into a relightable 3D avatar. More details from [Here](https://ubisoft-laforge.github.io/character/mosar/)
 * **01/02/2023**: S2F2 paper got accepted to FG2023. S2F2 is a robust self-supervised model that esimate 3D shape and reflectance from a monocular image. More details from [Here](https://youtu.be/DiHpZjx1sxc)
