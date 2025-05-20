@@ -35,6 +35,17 @@ My research interests are at the intersection of computer vision, machine learni
 
 ## Publications
 <p align="center">
+  <strong>Geometry-Aware Texture Generation for 3D Head Modeling with Artist-driven Control</strong><br>
+  <small>Amin Fadaeinejad, Abdallah Dib, Luiz Gustavo Hafemann, Emeline Got, Trevor Anderson, Amaury Depierre, Nikolaus F. Troje, Marcus A Brubaker, Marc-Andre Carbonneau</small><br>
+  <i> CVPR Workshops 2025 (CVEU) 
+</i><br>
+  <a href="[https://arxiv.org/pdf/2505.04387](https://arxiv.org/pdf/2505.04387)">pre-print</a> |
+  <a href="[https://ubisoft-laforge.github.io/character/GeoAwareTextures3D/index.html)">Project page</a> |
+  <br><br>
+  <img src="images/malikarjun2021photoapp.jpg" width="500">
+</p>
+
+<p align="center">
   <strong>SEREP: Semantic Facial Expression Representation for Robust In-the-Wild Capture and Retargeting</strong><br>
   <small>Arthur Josi, Luiz Gustavo Hafemann, Abdallah Dib, Emeline Got, Rafael MO Cruz, Marc-Andre Carbonneau</small><br>
   <i> ArXiv 2025
