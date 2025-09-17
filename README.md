@@ -8,13 +8,14 @@ Title: Abdallah Dib personal website
  <meta name="description" content="Abdallah Dib Deeb website, computer vision and machine learning scientist (computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics)">
   
 ## About me
-I am a research scientist working at Ubisoft La Forge (Montreal). Previously, I worked as a Senior Research Scientist at InterDigital R&I (France) and Technicolor Research, and as a Research Engineer at Inria.
+I am a research scientist working at **Ubisoft La Forge** (Montreal). Previously, I worked as a Senior Research Scientist at InterDigital R&I (France) and Technicolor Research, and as a Research Engineer at Inria.
 
-My work focuses on developing next-generation methods for face capture, facial animation, and avatar reconstruction specifically designed for video game applications and interactive entertainment.
+My work focuses on developing next-generation methods for **face capture**, **facial animation**, and **avatar reconstruction** specifically designed for **video game** applications and **interactive entertainment**.
 
-I identify real-world production challenges, develop novel techniques, and ensure these contributions translate into practical tools that empower artists and creators.
+My research interests include **capture systems** (such as lightstage capture) and **generative models**, with the goal of developing solutions that address production challenges and translate into tools that empower artists and creators.
 
-My contributions cover self-supervised learning, differentiable rendering, and computer graphics, with publications at leading venues including CVPR, ICCV, SIGGRAPH, and Eurographics.
+I supervise research interns and PhD students, and I am always seeking motivated candidates to contribute to state-of-the-art projects in facial animation and generative models. You can reach me by email: deeb.abdallah AT gmail DOT com
+
 <p align="center">
 <a href="https://www.linkedin.com/in/abdallah-dib-19912b25/"><img src="images/linkedin.png" height="40" ></a>
 <a href="https://scholar.google.fr/citations?user=yb6wpSEAAAAJ&hl=fr"><img src="images/scholar.png" height="40" ></a>
