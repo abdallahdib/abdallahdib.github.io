@@ -10,9 +10,7 @@ Title: Abdallah Dib personal website
 ## About me
 I am a research scientist working at **Ubisoft La Forge** (Montreal). Previously, I worked as a Senior Research Scientist at InterDigital R&I (France) and Technicolor Research, and as a Research Engineer at Inria.
 
-My work focuses on developing next-generation methods for **face capture**, **facial animation**, and **avatar reconstruction** specifically designed for **video game** applications and **interactive entertainment**.
-
-My research interests include **capture systems** (such as lightstage capture) and **generative models**, with the goal of developing solutions that address production challenges and translate into tools that empower artists and creators.
+I develop methods for **face capture**, **facial animation**, and **avatar reconstruction** in video games and interactive entertainment. My research combines **capture systems** (including lightstage capture) and **generative models** to create practical tools that solve production challenges and support artists and creators.
 
 I supervise research interns and PhD students, and I am always seeking motivated candidates to contribute to state-of-the-art projects in facial animation and generative models. You can reach me by email: deeb.abdallah AT gmail DOT com
 
