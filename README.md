@@ -8,11 +8,13 @@ Title: Abdallah Dib personal website
  <meta name="description" content="Abdallah Dib Deeb website, computer vision and machine learning scientist (computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics)">
   
 ## About me
-I am a research scientist working at Ubisoft La Forge (Montreal). Before that I worked as a senior research scientist at InterDigital R&I France since 2019. Previously, I held the same position at Technicolor research (2017-2019) and I worked as a research engineer at Inria (from 2008-2012).
+I am a research scientist working at Ubisoft La Forge (Montreal). Previously, I worked as a Senior Research Scientist at InterDigital R&I (France) and Technicolor Research, and as a Research Engineer at Inria.
 
-I received my Phd in Computer Science from Inria research center in 2016.
+My work focuses on developing next-generation methods for face capture, facial animation, and avatar reconstruction specifically designed for video game applications and interactive entertainment.
 
-My research interests are at the intersection of computer vision, machine learning and graphics. I apply deep learning and numerical optimization for scene understanding from images and videos.
+I identify real-world production challenges, develop novel techniques, and ensure these contributions translate into practical tools that empower artists and creators.
+
+My contributions cover self-supervised learning, differentiable rendering, and computer graphics, with publications at leading venues including CVPR, ICCV, SIGGRAPH, and Eurographics.
 <p align="center">
 <a href="https://www.linkedin.com/in/abdallah-dib-19912b25/"><img src="images/linkedin.png" height="40" ></a>
 <a href="https://scholar.google.fr/citations?user=yb6wpSEAAAAJ&hl=fr"><img src="images/scholar.png" height="40" ></a>
