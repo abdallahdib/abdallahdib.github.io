@@ -144,7 +144,9 @@ I develop methods for **face capture**, **facial animation**, and **avatar recon
   <a href="https://hal.inria.fr/hal-01203638/document">paper</a> |
   <a href="https://www.youtube.com/watch?v=fEIChcc0yoY/">video</a>
   <br><br>
-  <img src="images/dib2015pose.jpg" width="500">
+  <video width="320" height="240" controls>
+  <source src="images/universal_facelab_demo.mp4" type="video/mp4">
+</video>
 </p>
 
 <p align="center">
