@@ -8,21 +8,18 @@ Title: Abdallah Dib personal website
  <meta name="description" content="Abdallah Dib Deeb website, computer vision and machine learning scientist (computer graphics, rendering, deep learning, CV, face tracking, motion capture, 3D, game programming, C, C++, pytorch, python, objective-C, OpenGL, 3D graphics)">
   
 ## About me
-I am a research scientist working at **Ubisoft La Forge** (Montreal). Previously, I worked as a Senior Research Scientist at InterDigital R&I (France) and Technicolor Research, and as a Research Engineer at Inria.
+I am a research scientist working at **Ubisoft La Forge** (Montreal). Previously, I worked as a Senior Research Scientist at InterDigital R&I (France) and Technicolor Research, and as a Research Engineer at Inria. I obtained my PhD from Inria in 2016.
 
 I develop methods for **face capture**, **facial animation**, and **avatar reconstruction** in video games and interactive entertainment. My research combines **capture systems** (including lightstage capture) and **generative models** to create practical tools that solve production challenges and support artists and creators.
 
-I supervise research interns and PhD students, and I am always seeking motivated candidates to contribute to state-of-the-art projects in facial animation and generative models. You can reach me by email: deeb.abdallah AT gmail DOT com
+<a href="mailto:deeb.abdallah@gmail.com">I supervise research interns and PhD students, and I am always seeking motivated candidates to contribute to state-of-the-art projects in facial animation and generative models. You can reach me by email: deeb.abdallah AT gmail DOT com
 
 <p align="center">
 <a href="https://www.linkedin.com/in/abdallah-dib-19912b25/"><img src="images/linkedin.png" height="40" ></a>
 <a href="https://scholar.google.fr/citations?user=yb6wpSEAAAAJ&hl=fr"><img src="images/scholar.png" height="40" ></a>
 <a href="https://twitter.com/abdallah_dib"><img src="images/twitter.png" height="40" ></a>
 </p>
-<p align="center">
-<!---<a href="mailto:deeb.abdallah@gmail.com">Looking for internship/PhD? click here to contact me by email, I may have some cool open positions for you</a>.<br>-->
-<a href="mailto:deeb.abdallah@gmail.com">I'm actively searching for PhD student(s) to join our team and contribute to pushing the boundaries of realistic avatar creation. If you're motivated, passionate, and interested in working on this topic, please send me an email with your CV.</a><br>
-</p>
+
 
 ## News
 * **20/05/2025**: One paper accepted to 'AI for Creative Visual Content Generation Editing and Understanding' (CVEU), CVPR  2025. We propose a texture generator model giving artists control over shape, skin tone and fine details. More details from [Here](https://ubisoft-laforge.github.io/character/GeoAwareTextures3D/index.html)
