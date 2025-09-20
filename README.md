@@ -183,7 +183,7 @@ Here you find some of my personal projects I did (and continue doing) in spare t
 </p>
 
 <p align="center">
- <strong>Physically based rendering engine</strong><br>
+ <strong>Rendering Engine</strong><br>
  <small>I Continue developing  and maintaining this graphics engine. It is used mainly for visualizing 3D models. it is written in  C++/OpenGL and i ported it to many platforms: windows/mac/linux/iOS/Android(via JNI)/Web(via Emiscripten). It implements physically based rendering with various BRDF models (Cook-Torrance, Phong), Deferred shading, Shadow and normal mapping. It has built-in 2D GUI support via 'imgui'. </small>
 </p>
 
@@ -193,12 +193,12 @@ Here you find some of my personal projects I did (and continue doing) in spare t
 
 
 <p align="center">
-  <strong>iOS Game programming</strong><br>
+  <strong>iOS Graphics Programming</strong><br>
   <small>In 2012, I started developing mobile games and apps. In 2017, I removed these apps from App store (Because i didn't have enough time to maintain them). Below are these apps/games.  <strong>The code source for these apps can be shared upon request.</strong></small>
 </p>
 
 <p align="center">
-  <strong>Jumper buggy</strong><br>
+  <strong>Jumper Buggy</strong><br>
   <small>Developed in 2013. A 3D action and car simulation game for iOS. It uses the old OpenDynamics Engine for physics simulation. Written in C++/OpenGL. <a href="https://www.youtube.com/watch?v=I5MDCqC-wmQ">Video from here</a> </small>
 </p>
 
@@ -219,7 +219,7 @@ Here you find some of my personal projects I did (and continue doing) in spare t
 </p>
 
 <p align="center">
-  <strong>Camera Art effects</strong><br>
+  <strong>Camera Art Effects</strong><br>
   <small>Developed in 2012. It is  photography application for iOS ( iPhone, iPod and iPad) that lets you apply filter and effects to your camera and in real time. It uses optimized GLSL shaders to run in realtime on an iPhone 3GS. Supported filters: Cartoon; Old Movie, Pencil, Colored Pencil, Bulge, Dent, Rain, ... Written in C++/OpenGL.</small>
 </p>
 
