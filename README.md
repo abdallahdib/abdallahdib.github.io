@@ -22,6 +22,8 @@ I develop methods for **face capture**, **facial animation**, and **avatar recon
 
 
 ## News
+* **06/07/2025** We’ve published a new [blog](https://www.ubisoft.com/en-us/studio/laforge/news/5hypnC0mKU3LY4t4eHxnjR/mosar-gnration-davatars-de-personnage-fiables-partir-dun-simple-portrait-photo) post on Ubisoft website, showcasing our work on the paper[MoSAR](MoSAR), a technique used by artists to streamline their workflow.
+* **25/06/2025**: SEREP paper got accepted to ICCV 2025. We introduce a novel learning-based method for monocular facial expression capture and retargeting. More details from [Here](https://ubisoft-laforge.github.io/character/serep/)
 * **20/05/2025**: One paper accepted to 'AI for Creative Visual Content Generation Editing and Understanding' (CVEU), CVPR  2025. We propose a texture generator model giving artists control over shape, skin tone and fine details. More details from [Here](https://ubisoft-laforge.github.io/character/GeoAwareTextures3D/index.html)
 * **09/03/2024**: We released **FFHQ-UV-Intrinsics** dataset that contains intrinsics texture maps for 10K subjects at HD resolution. Download it from [here](https://github.com/ubisoft/ubisoft-laforge-FFHQ-UV-Intrinsics) 
 * **01/03/2024**: Mosar paper got accepted to CVPR 2024. MoSAR turns a portrait image into a relightable 3D avatar. More details from [Here](https://ubisoft-laforge.github.io/character/mosar/)
@@ -48,7 +50,7 @@ I develop methods for **face capture**, **facial animation**, and **avatar recon
 <p align="center">
   <strong>SEREP: Semantic Facial Expression Representation for Robust In-the-Wild Capture and Retargeting</strong><br>
   <small>Arthur Josi, Luiz Gustavo Hafemann, Abdallah Dib, Emeline Got, Rafael MO Cruz, Marc-Andre Carbonneau</small><br>
-  <i> ArXiv 2025
+  <i> International Conference on Computer Vision (ICCV 2025) 
 </i><br>
 <a href="https://arxiv.org/pdf/2412.14371">pre-print</a> |
   <a href="https://ubisoft-laforge.github.io/character/serep/">Project page</a> 
