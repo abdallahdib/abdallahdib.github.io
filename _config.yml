@@ -1,5 +1,4 @@
-theme: time-machine
-remote_theme: pages-themes/cayman@v0.2.0
+theme: jekyll-theme-minimal
 logo: images/me-crop.png
 title: "Abdallah Dib"
 google_verify: 9b6CJI3etMj8jvmNQ5KUBWYhwSXCMKGOanCxbq16y90
