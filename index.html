@@ -63,10 +63,15 @@
             margin-bottom: 20px;
         }
 
-        .theme-toggle {
+        .header-buttons {
             position: absolute;
             top: 0;
             right: 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        .theme-toggle, .news-toggle {
             background: var(--card-bg);
             border: 2px solid var(--border-color);
             border-radius: 25px;
@@ -78,11 +83,38 @@
             justify-content: center;
             transition: all 0.3s ease;
             font-size: 1.2rem;
+            color: var(--text-color);
         }
 
-        .theme-toggle:hover {
+        .theme-toggle:hover, .news-toggle:hover {
             transform: scale(1.1);
             border-color: var(--accent-color);
+        }
+
+        .news-section {
+            margin-bottom: 30px;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .news-section.active {
+            max-height: 500px;
+        }
+
+        .news-item {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .news-date {
+            font-weight: 600;
+            color: #e74c3c;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
         }
 
         .main-content {
@@ -336,6 +368,14 @@
                 position: relative;
                 margin: 0 auto 20px auto;
             }
+
+            .header-buttons {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 20px;
+            }
         }
     </style>
 </head>
@@ -343,10 +383,34 @@
     <div class="container">
         <header class="header">
             <h1 class="name">Abdallah Dib</h1>
-            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
-                🌙
-            </button>
+            <div class="header-buttons">
+                <button class="news-toggle" onclick="toggleNews()" title="Toggle news">
+                    📰
+                </button>
+                <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+                    🌙
+                </button>
+            </div>
         </header>
+
+        <section class="news-section" id="newsSection">
+            <h2 class="section-title">Recent News</h2>
+            
+            <div class="news-item">
+                <div class="news-date">June 25, 2025</div>
+                <p>SEREP paper got accepted to <strong>ICCV 2025</strong>. We introduce a novel learning-based method for monocular facial expression capture and retargeting.</p>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-date">May 20, 2025</div>
+                <p>One paper accepted to 'AI for Creative Visual Content Generation Editing and Understanding' (CVEU), <strong>CVPR 2025</strong>. We propose a texture generator model giving artists control over shape, skin tone and fine details.</p>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-date">March 1, 2024</div>
+                <p>Mosar paper got accepted to <strong>CVPR 2024</strong>. MoSAR turns a portrait image into a relightable 3D avatar.</p>
+            </div>
+        </section>
 
         <div class="main-content">
             <img src="https://abdallahdib.github.io/images/me-crop.png" alt="Abdallah Dib" class="profile-image">
@@ -364,7 +428,7 @@
             </div>
         </div>
 
-        <div class="social-links">
+         <div class="social-links">
             <a href="https://www.linkedin.com/in/abdallah-dib-19912b25/"><img src="https://abdallahdib.github.io/images/linkedin.png" height="75" ></a>
             <a href="https://scholar.google.fr/citations?user=yb6wpSEAAAAJ&hl=fr"><img src="https://abdallahdib.github.io/images/scholar3.png" height="80" ></a>
             <a href="https://twitter.com/abdallah_dib"><img src="https://abdallahdib.github.io/images/twitter.png" height="75" ></a>
@@ -564,16 +628,43 @@
             }
         }
 
-        // Load saved theme on page load
+        function toggleNews() {
+            const newsSection = document.getElementById('newsSection');
+            const button = document.querySelector('.news-toggle');
+            
+            if (newsSection.classList.contains('active')) {
+                newsSection.classList.remove('active');
+                button.innerHTML = '📰';
+                localStorage.setItem('newsVisible', 'false');
+            } else {
+                newsSection.classList.add('active');
+                button.innerHTML = '📰✨';
+                localStorage.setItem('newsVisible', 'true');
+            }
+        }
+
+        // Load saved theme and news state on page load
         document.addEventListener('DOMContentLoaded', function() {
             const savedTheme = localStorage.getItem('theme');
-            const button = document.querySelector('.theme-toggle');
+            const savedNewsState = localStorage.getItem('newsVisible');
+            const themeButton = document.querySelector('.theme-toggle');
+            const newsButton = document.querySelector('.news-toggle');
+            const newsSection = document.getElementById('newsSection');
             
+            // Set theme
             if (savedTheme === 'dark') {
                 document.body.setAttribute('data-theme', 'dark');
-                button.innerHTML = '☀️';
+                themeButton.innerHTML = '☀️';
             } else {
-                button.innerHTML = '🌙';
+                themeButton.innerHTML = '🌙';
+            }
+            
+            // Set news visibility
+            if (savedNewsState === 'true') {
+                newsSection.classList.add('active');
+                newsButton.innerHTML = '📰✨';
+            } else {
+                newsButton.innerHTML = '📰';
             }
         });
     </script>
