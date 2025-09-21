@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Projects - Abdallah Dib</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg-color: #fff;
+            --text-color: #333;
+            --secondary-text: #555;
+            --tertiary-text: #666;
+            --accent-color: #3498db;
+            --accent-hover: #2980b9;
+            --card-bg: #f8f9fa;
+            --border-color: #e0e0e0;
+            --shadow: rgba(0,0,0,0.1);
+            --highlight-bg: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --text-color: #e0e0e0;
+            --secondary-text: #b0b0b0;
+            --tertiary-text: #999;
+            --accent-color: #4da6d9;
+            --accent-hover: #3d8bb8;
+            --card-bg: #2d2d2d;
+            --border-color: #404040;
+            --shadow: rgba(0,0,0,0.3);
+            --highlight-bg: linear-gradient(120deg, #2d5a5a 0%, #5a3d4a 100%);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: var(--text-color);
+            margin-bottom: 20px;
+        }
+
+        .header-buttons {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            gap: 10px;
+        }
+
+        .nav-link {
+            display: inline-block;
+            padding: 8px 16px;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+
+        .nav-link:hover {
+            background-color: var(--accent-hover);
+            color: white;
+        }
+
+        .theme-toggle {
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+            color: var(--text-color);
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+            border-color: var(--accent-color);
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: var(--text-color);
+            margin-bottom: 25px;
+            font-weight: 400;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 8px;
+        }
+
+        .intro-text {
+            text-align: center;
+            color: var(--secondary-text);
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .project-item {
+            margin-bottom: 40px;
+            padding: 30px;
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px var(--shadow);
+        }
+
+        .project-title {
+            font-weight: 600;
+            font-size: 1.3rem;
+            color: var(--text-color);
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .project-description {
+            color: var(--tertiary-text);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .project-images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .project-images img {
+            border-radius: 8px;
+            box-shadow: 0 4px 12px var(--shadow);
+            transition: transform 0.3s ease;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .project-images img:hover {
+            transform: scale(1.05);
+        }
+
+        .highlight {
+            background: var(--highlight-bg);
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
+        }
+
+        @media (max-width: 768px) {
+            .name {
+                font-size: 2rem;
+            }
+
+            .header-buttons {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            .project-images img {
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="name">Personal Projects</h1>
+            <div class="header-buttons">
+                <a href="index.html" class="nav-link">← Back to Main</a>
+                <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+                    🌙
+                </button>
+            </div>
+        </header>
+
+        <section class="section">
+            <div class="intro-text">
+                Here you find some of my personal projects I did (and continue doing) in spare time. They are related to C++ and Graphics programming (OpenGL/GLSL), and mobile dev (iOS).
+            </div>
+            
+            <div class="project-item">
+                <div class="project-title">iOS OpenGLES 2.0 tutorials (with source code)</div>
+                <div class="project-description">
+                    In 2013, I wrote educational tutorials on Graphics programming for iOS using OpenGLES shading language. Tutorials were written in C++ with a clean and intuitive API for beginners. It covers: 3D mesh loader, camera movement, normal mapping, gpu skinning, environment mapping, shadow mapping. Code source can be found on github from <a href="https://github.com/abdallahdib/opengles_tutorials" target="_blank">here</a>
+                </div>
+                <div class="project-images">
+                    <img src="https://abdallahdib.github.io/images/ios/waterScene.png" width="350" alt="Water Scene">
+                    <img src="https://abdallahdib.github.io/images/ios/fileLoader.png" width="350" alt="File Loader">
+                    <img src="https://abdallahdib.github.io/images/ios/sceneWithBump.png" width="350" alt="Scene with Bump Mapping">
+                    <img src="https://abdallahdib.github.io/images/ios/gpuSkinning.png" width="350" alt="GPU Skinning">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Rendering Engine</div>
+                <div class="project-description">
+                    I continue developing and maintaining this graphics engine. It is used mainly for visualizing 3D models. It is written in C++/OpenGL and I ported it to many platforms: windows/mac/linux/iOS/Android(via JNI)/Web(via Emscripten). It implements physically based rendering with various BRDF models (Cook-Torrance, Phong), Deferred shading, Shadow and normal mapping. It has built-in 2D GUI support via 'imgui'.
+                </div>
+                <div class="project-images">
+                    <img src="https://abdallahdib.github.io/images/pbr/pbr1.png" width="300" alt="PBR Rendering 1">
+                    <img src="https://abdallahdib.github.io/images/pbr/pbr2.png" width="300" alt="PBR Rendering 2">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">iOS Graphics Programming</div>
+                <div class="project-description">
+                    In 2012, I started developing mobile games and apps. In 2017, I removed these apps from App store (Because I didn't have enough time to maintain them). Below are these apps/games. <strong>The code source for these apps can be shared upon request.</strong>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Jumper Buggy</div>
+                <div class="project-description">
+                    Developed in 2013. A 3D action and car simulation game for iOS. It uses the old OpenDynamics Engine for physics simulation. Written in C++/OpenGL. <a href="https://www.youtube.com/watch?v=I5MDCqC-wmQ" target="_blank">Video from here</a>
+                </div>
+                <div class="project-images">
+                    <img src="https://abdallahdib.github.io/images/ios/jumper1.png" width="200" alt="Jumper Buggy Screenshot 1">
+                    <img src="https://abdallahdib.github.io/images/ios/jumper2.png" width="200" alt="Jumper Buggy Screenshot 2">
+                    <img src="https://abdallahdib.github.io/images/ios/jumper3.png" width="200" alt="Jumper Buggy Screenshot 3">
+                    <img src="https://abdallahdib.github.io/images/ios/jumper3.png" width="200" alt="Jumper Buggy Screenshot 4">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Mosaic Puzzle</div>
+                <div class="project-description">
+                    Developed in 2014. The goal of this educational game is to help children develop their eye↔hand coordination skills. Written in C++/OpenGL.
+                </div>
+                <div class="project-images">
+                    <img src="https://abdallahdib.github.io/images/ios/mos1.PNG" width="300" alt="Mosaic Puzzle Screenshot 1">
+                    <img src="https://abdallahdib.github.io/images/ios/mos2.PNG" width="300" alt="Mosaic Puzzle Screenshot 2">
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-title">Camera Art Effects</div>
+                <div class="project-description">
+                    Developed in 2012. It is a photography application for iOS (iPhone, iPod and iPad) that lets you apply filters and effects to your camera in real time. It uses optimized GLSL shaders to run in realtime on an iPhone 3GS. Supported filters: Cartoon, Old Movie, Pencil, Colored Pencil, Bulge, Dent, Rain, ... Written in C++/OpenGL.
+                </div>
+                <div class="project-images">
+                    <img src="https://abdallahdib.github.io/images/ios/art1.JPG" width="180" alt="Camera Art Effects Screenshot 1">
+                    <img src="https://abdallahdib.github.io/images/ios/art2.PNG" width="180" alt="Camera Art Effects Screenshot 2">
+                    <img src="https://abdallahdib.github.io/images/ios/art3.JPG" width="180" alt="Camera Art Effects Screenshot 3">
+                    <img src="https://abdallahdib.github.io/images/ios/art4.PNG" width="180" alt="Camera Art Effects Screenshot 4">
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const button = document.querySelector('.theme-toggle');
+            
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                button.innerHTML = '🌙';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                button.innerHTML = '☀️';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Load saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme');
+            const button = document.querySelector('.theme-toggle');
+            
+            if (savedTheme === 'dark') {
+                document.body.setAttribute('data-theme', 'dark');
+                button.innerHTML = '☀️';
+            } else {
+                button.innerHTML = '🌙';
+            }
+        });
+    </script>
+</body>
+</html>
