@@ -92,15 +92,42 @@
         }
 
         .news-section {
-            margin-bottom: 30px;
-            max-height: 0;
-            overflow: hidden;
-            transition: max-height 0.3s ease-out;
-        }
+    margin-bottom: 30px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
 
-        .news-section.active {
-            max-height: 500px;
-        }
+.news-section.active {
+    max-height: 400px; /* Fixed height */
+    overflow-y: auto; /* Enable vertical scrolling */
+    padding-right: 10px; /* Space for scrollbar */
+}
+
+/* Custom scrollbar styling */
+.news-section::-webkit-scrollbar {
+    width: 6px;
+}
+
+.news-section::-webkit-scrollbar-track {
+    background: var(--card-bg);
+    border-radius: 3px;
+}
+
+.news-section::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 3px;
+}
+
+.news-section::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-hover);
+}
+
+/* For Firefox */
+.news-section {
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) var(--card-bg);
+}
 
         .news-item {
             margin-bottom: 20px;
@@ -394,23 +421,63 @@
         </header>
 
         <section class="news-section" id="newsSection">
-            <h2 class="section-title">Recent News</h2>
-            
-            <div class="news-item">
-                <div class="news-date">June 25, 2025</div>
-                <p>SEREP paper got accepted to <strong>ICCV 2025</strong>. We introduce a novel learning-based method for monocular facial expression capture and retargeting.</p>
-            </div>
-            
-            <div class="news-item">
-                <div class="news-date">May 20, 2025</div>
-                <p>One paper accepted to 'AI for Creative Visual Content Generation Editing and Understanding' (CVEU), <strong>CVPR 2025</strong>. We propose a texture generator model giving artists control over shape, skin tone and fine details.</p>
-            </div>
-            
-            <div class="news-item">
-                <div class="news-date">March 1, 2024</div>
-                <p>Mosar paper got accepted to <strong>CVPR 2024</strong>. MoSAR turns a portrait image into a relightable 3D avatar.</p>
-            </div>
-        </section>
+    <h2 class="section-title">Recent News</h2>
+    
+    <div class="news-item">
+        <div class="news-date">06/07/2025</div>
+        <p>We've published a new <a href="https://www.ubisoft.com/en-us/studio/laforge/news/5hypnC0mKU3LY4t4eHxnjR/mosar-gnration-davatars-de-personnage-fiables-partir-dun-simple-portrait-photo" target="_blank">blog</a> post on Ubisoft website, showcasing our work on the paper <a href="https://ubisoft-laforge.github.io/character/mosar/" target="_blank">MoSAR</a>, a technique used by artists to streamline their workflow.</p>
+    </div>
+    
+    <div class="news-item">
+        <div class="news-date">25/06/2025</div>
+        <p>SEREP paper got accepted to <strong>ICCV 2025</strong>. We introduce a novel learning-based method for monocular facial expression capture and retargeting. More details from <a href="https://ubisoft-laforge.github.io/character/serep/" target="_blank">Here</a></p>
+    </div>
+    
+    <div class="news-item">
+        <div class="news-date">20/05/2025</div>
+        <p>One paper accepted to 'AI for Creative Visual Content Generation Editing and Understanding' (CVEU), <strong>CVPR 2025</strong>. We propose a texture generator model giving artists control over shape, skin tone and fine details. More details from <a href="https://ubisoft-laforge.github.io/character/GeoAwareTextures3D/index.html" target="_blank">Here</a></p>
+    </div>
+    
+    <div class="news-item">
+        <div class="news-date">09/03/2024</div>
+        <p>We released <strong>FFHQ-UV-Intrinsics</strong> dataset that contains intrinsics texture maps for 10K subjects at HD resolution. Download it from <a href="https://github.com/ubisoft/ubisoft-laforge-FFHQ-UV-Intrinsics" target="_blank">here</a></p>
+    </div>
+    
+    <div class="news-item">
+        <div class="news-date">01/03/2024</div>
+        <p>Mosar paper got accepted to <strong>CVPR 2024</strong>. MoSAR turns a portrait image into a relightable 3D avatar. More details from <a href="https://ubisoft-laforge.github.io/character/mosar/" target="_blank">Here</a></p>
+    </div>
+    
+    <div class="news-item">
+        <div class="news-date">05/04/2023</div>
+        <p>We published a technical paper showcasing our FaceLab solution, which was used by artists to capture 3D facial performance for the 2019 film <a href="https://www.imdb.com/title/tt5697572/" target="_blank">Cats</a>.</p>
+    </div>
+    
+    <div class="news-item">
+        <div class="news-date">01/02/2023</div>
+        <p>S2F2 paper got accepted to <strong>FG2023</strong>. S2F2 is a robust self-supervised model that estimate 3D shape and reflectance from a monocular image. More details from <a href="https://youtu.be/DiHpZjx1sxc" target="_blank">Here</a></p>
+    </div>
+    
+    <div class="news-item">
+        <div class="news-date">18/05/2022</div>
+        <p>DeepNextFace is a 3D face reconstruction library from a single monocular RGB image via deep convolutional neural networks and differentiable ray tracing. Check it from <a href="https://github.com/abdallahdib/DeepNextFace" target="_blank">https://github.com/abdallahdib/DeepNextFace</a></p>
+    </div>
+    
+    <div class="news-item">
+        <div class="news-date">21/04/2022</div>
+        <p>NextFace is a lightweight open source library, written in pytorch, for high fidelity face reconstruction. Check it from <a href="https://github.com/abdallahdib/NextFace" target="_blank">https://github.com/abdallahdib/NextFace</a></p>
+    </div>
+    
+    <div class="news-item">
+        <div class="news-date">11/10/2021</div>
+        <p>Our paper on self-supervised monocular 3D face reconstruction got accepted to <strong>ICCV 2021</strong>. More details from <a href="https://www.youtube.com/watch?v=VVr_bbXEjxE" target="_blank">Here</a></p>
+    </div>
+    
+    <div class="news-item">
+        <div class="news-date">09/03/2021</div>
+        <p>Our paper on monocular 3D face reconstruction got accepted to <strong>EuroGraphics 2021</strong>. We achieve realistic 3D face reconstruction from a single image. More details from <a href="https://github.com/abdallahdib/NextFace" target="_blank">Here</a></p>
+    </div>
+</section>
 
         <div class="main-content">
             <img src="https://abdallahdib.github.io/images/me-crop.png" alt="Abdallah Dib" class="profile-image">
