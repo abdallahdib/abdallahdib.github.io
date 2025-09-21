@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdallah Dib - Research Scientist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .header {
+            margin-bottom: 40px;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: #2c3e50;
+            margin-bottom: 20px;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+            align-items: start;
+        }
+
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .bio {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        .bio p {
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-left: 4px solid #3498db;
+            border-radius: 4px;
+        }
+
+        .contact-info p {
+            margin-bottom: 10px;
+            font-size: 0.95rem;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            font-weight: 400;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 8px;
+        }
+
+        .news-item {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            border-left: 4px solid #e74c3c;
+        }
+
+        .news-date {
+            font-weight: 600;
+            color: #e74c3c;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .paper {
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+        .paper-media {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+        .paper-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .paper-image:hover {
+            transform: scale(1.05);
+        }
+
+        .paper-video {
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+        .video-overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 8px;
+            border-radius: 50%;
+            font-size: 24px;
+            pointer-events: none;
+        }
+
+        .paper-content {
+            flex: 1;
+        }
+
+        .highlight {
+    background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: 500;
+}
+        .paper-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .paper-authors {
+            color: #666;
+            margin-bottom: 5px;
+            font-size: 0.95rem;
+        }
+
+        .paper-venue {
+            color: #3498db;
+            font-weight: 500;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .paper-links a {
+            display: inline-block;
+            padding: 6px 12px;
+            margin: 4px 8px 4px 0;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            transition: background-color 0.3s;
+        }
+
+        .paper-links a:hover {
+            background-color: #2980b9;
+        }
+
+        .project {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+        }
+
+        .project-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .project-description {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .highlight {
+            color: #3498db;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                text-align: center;
+            }
+            
+            .profile-image {
+                width: 150px;
+                height: 150px;
+                margin: 0 auto;
+            }
+            
+            .name {
+                font-size: 2rem;
+            }
+
+            .paper {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            .paper-media {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="name">Abdallah Dib</h1>
+        </header>
+
+        <div class="main-content">
+            <img src="https://abdallahdib.github.io/images/me-crop.png" alt="Abdallah Dib" class="profile-image">
+            <div class="bio">
+                <p>I am a <span class="highlight">research scientist</span> working at <strong>Ubisoft La Forge</strong> (Montreal). Previously, I worked as a Senior Research Scientist at InterDigital R&I (France) and Technicolor Research, and as a Research Engineer at Inria. I obtained my PhD from Inria in 2016.</p>
+                
+                <p>I develop methods for face capture, facial animation, and avatar reconstruction for video games and interactive entertainment My passion lies in conducting applied research that tackles real-world production challenges—from identifying workflow bottlenecks to developing novel techniques that become integrated tools, enabling more efficient workflows for artists and creators.        
+                </p>
+                
+                <div class="contact-info">
+                    <p><strong>Research Interests:</strong> Computer Vision, Computer Graphics, Machine Learning, Generative Models, Neural Rendering, Self-Supervised Learning, Disentangled representations</p>
+                    <p><strong>Contact:</strong> deeb.abdallah [at] gmail [dot] com</p>
+                    <p>I supervise research interns and PhD students, and I am always seeking motivated candidates to contribute to state-of-the-art projects.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--<section class="section">
+            <h2 class="section-title">Recent News</h2>
+            
+            <div class="news-item">
+                <div class="news-date">June 25, 2025</div>
+                <p>SEREP paper got accepted to <strong>ICCV 2025</strong>. We introduce a novel learning-based method for monocular facial expression capture and retargeting.</p>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-date">May 20, 2025</div>
+                <p>One paper accepted to 'AI for Creative Visual Content Generation Editing and Understanding' (CVEU), <strong>CVPR 2025</strong>. We propose a texture generator model giving artists control over shape, skin tone and fine details.</p>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-date">March 1, 2024</div>
+                <p>Mosar paper got accepted to <strong>CVPR 2024</strong>. MoSAR turns a portrait image into a relightable 3D avatar.</p>
+            </div>
+        </section>-->
+
+
+
+        <section class="section">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="paper">
+                
+                <div class="paper-media">
+                    <video class="paper-video" controls muted loop autoplay>
+                        <source src="https://abdallahdib.github.io/images/mosar-laforge.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="paper-content">
+                    
+                    <div class="paper-authors">A <a href="https://www.ubisoft.com/en-us/studio/laforge/news/5hypnC0mKU3LY4t4eHxnjR/mosar-gnration-davatars-de-personnage-fiables-partir-dun-simple-portrait-photo" target="_blank">blog</a> post published on Ubisoft website, showcasing our work on <a href="https://ubisoft-laforge.github.io/character/mosar/" target="_blank" class="highlight">MoSAR</a>, a novel technique that transforms a single portrait photo into a fully relightable and detailed 3D avatar, streamlining character creation workflows for artists.</div>
+                </div>
+            </div>
+
+            <div class="paper">
+                
+                <div class="paper-media">
+                    <video class="paper-video" controls muted loop autoplay>
+                        <source src="https://abdallahdib.github.io/images/universal_facelab_demo.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="paper-content">
+                    
+                    <div class="paper-authors">A technical <a href="https://dl.acm.org/doi/pdf/10.1145/3403736.3403938" target="_blank">paper</a> presents <a class="highlight">FaceLab</a>, our facial performance capture solution that enabled <a href="https://www.mpcvfx.com/en/" target="_blank">MPC</a> artists to automatically extract facial performances from single camera footage. This technology successfully processed over 260 shots for the 2019 film <a href="https://www.imdb.com/title/tt5697572/" target="_blank">Cats</a>.</div>
+                </div>
+            </div>
+
+            <div class="paper">
+                
+                <div class="paper-media">
+                    <img src="https://abdallahdib.github.io/images/nextFace.png" alt="Texture Generation" class="paper-image">
+                </div>
+                <div class="paper-content">
+                    <div class="paper-authors"><a href="https://github.com/abdallahdib/NextFace" target="_blank" class="highlight">NextFace</a>, my open-source PyTorch library for high-fidelity 3D face reconstruction from monocular RGB image. NextFace estimates facial attributes including 3D geometry, PBR materials (diffuse, specular, roughness), camera parameters, and illumination. With over 770 stars and 100 forks, NextFace serves as a state-of-the-art baseline for the computer vision research community.</div>
+                </div>
+            </div>
+
+            <div class="paper">
+                
+                <div class="paper-media">
+                    <img src="https://abdallahdib.github.io/images/ffhq.jpg" alt="Texture Generation" class="paper-image">
+                </div>
+                <div class="paper-content">
+
+                    <div class="paper-authors">We release <a href="https://github.com/ubisoft/ubisoft-laforge-FFHQ-UV-Intrinsics" target="_blank" class="highlight">FFHQ-UV-Intrinsics</a>, a unique dataset containing intrinsic maps for 10,000 subjects including: diffuse, specular, ambient occlusion, translucency, and normal maps. The dataset is Available publicly for research use from <a href="https://github.com/ubisoft/ubisoft-laforge-FFHQ-UV-Intrinsics" target="_blank">here</a>.</div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="section">
+            <h2 class="section-title">Selected Publications</h2>
+            
+            <div class="paper">
+                
+                <div class="paper-media">
+                    <video class="paper-video" controls muted loop autoplay>
+                        <source src="https://abdallahdib.github.io/images/serep.mp4" type="video/mp4">
+                    </video>
+                </div>
+
+
+                <div class="paper-content">
+                    <div class="paper-title">SEREP: Semantic Facial Expression Representation for Robust In-the-Wild Capture and Retargeting</div>
+                    <div class="paper-authors">Arthur Josi, Luiz Gustavo Hafemann, <strong>Abdallah Dib</strong>, Emeline Got, Rafael MO Cruz, Marc-Andre Carbonneau</div>
+                    <div class="paper-venue">International Conference on Computer Vision (ICCV 2025)</div>
+                    <div class="paper-links">
+                        <a href="https://arxiv.org/pdf/2412.14371" target="_blank">Paper</a>
+                        <a href="https://ubisoft-laforge.github.io/character/serep/" target="_blank">Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="paper">
+                <div class="paper-media">
+                    <img src="https://abdallahdib.github.io/images/geomAware_Fadaeinejad.png" alt="Texture Generation" class="paper-image">
+                </div>
+                <div class="paper-content">
+                    <div class="paper-title">Geometry-Aware Texture Generation for 3D Head Modeling with Artist-driven Control</div>
+                    <div class="paper-authors">Amin Fadaeinejad, <strong>Abdallah Dib</strong>, Luiz Gustavo Hafemann, Emeline Got, Trevor Anderson, Amaury Depierre, Nikolaus F. Troje, Marcus A Brubaker, Marc-Andre Carbonneau</div>
+                    <div class="paper-venue">AI for Creative Visual Content Generation Editing and Understanding (CVEU), CVPR 2025</div>
+                    <div class="paper-links">
+                        <a href="https://arxiv.org/pdf/2505.04387" target="_blank">Paper</a>
+                        <a href="https://ubisoft-laforge.github.io/character/GeoAwareTextures3D/index.html" target="_blank">Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-media">
+                    <video class="paper-video" controls muted loop autoplay>
+                        <source src="https://abdallahdib.github.io/images/mosar.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="paper-content">
+                    <div class="paper-title">MoSAR: Monocular Semi-Supervised Model for Avatar Reconstruction using Differentiable Shading</div>
+                    <div class="paper-authors"><strong>Abdallah Dib</strong>, Luiz Gustavo Hafemann, Emeline Got, Trevor Anderson, Amin Fadaeinejad, Rafael M. O. Cruz, Marc-Andre Carbonneau</div>
+                    <div class="paper-venue">IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR 2024)</div>
+                    <div class="paper-links">
+                        <a href="https://arxiv.org/abs/2312.13091" target="_blank">Paper</a>
+                        <a href="https://ubisoft-laforge.github.io/character/mosar/" target="_blank">Project</a>
+                        <a href="https://github.com/ubisoft/ubisoft-laforge-FFHQ-UV-Intrinsics" target="_blank">Dataset</a>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="paper">
+                <div class="paper-media">
+                    <video class="paper-video" controls muted loop autoplay>
+                        <source src="https://abdallahdib.github.io/images/s2f2.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="paper-content">
+                    <div class="paper-title">S2F2: Self-Supervised High Fidelity Face Reconstruction From Monocular Image</div>
+                    <div class="paper-authors"><strong>Abdallah Dib</strong>, Cedric Thebault, Junghyun Ahn, Philippe-Henri Gosselin, Louis Chevallier</div>
+                    <div class="paper-venue">International Conference on Automatic Face and Gesture Recognition FG 2023</div>
+                    <div class="paper-links">
+                        <a href="https://arxiv.org/abs/2203.07732" target="_blank">Paper</a>
+                        <a href="https://youtu.be/DiHpZjx1sxc" target="_blank">Video</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-media">
+                    <video class="paper-video" controls muted loop autoplay>
+                        <source src="https://abdallahdib.github.io/images/practical.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="paper-content">
+                    <div class="paper-title">Practical Face Reconstruction via Differentiable Ray Tracing</div>
+                    <div class="paper-authors"><strong>Abdallah Dib</strong>, Gaurav Bharaj, Junghyun Ahn, Cédric Thébault, Philippe-Henri Gosselin, Marco Romeo, Louis Chevallier</div>
+                    <div class="paper-venue">Computer Graphics Forum, Eurographics' 2021</div>
+                    <div class="paper-links">
+                        <a href="https://arxiv.org/abs/2101.05356" target="_blank">Paper</a>
+                        <a href="https://youtu.be/bPFp0oZ9plg" target="_blank">Video</a>
+                        <a href="https://github.com/abdallahdib/NextFace" target="_blank">Code</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="paper">
+                <div class="paper-media">
+                    <video class="paper-video" controls muted loop autoplay>
+                        <source src="https://abdallahdib.github.io/images/towards.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="paper-content">
+                    <div class="paper-title">Towards High Fidelity Monocular Face Reconstruction with Rich Reflectance using Self-supervised Learning and Ray Tracing</div>
+                    <div class="paper-authors"><strong>Abdallah Dib</strong>, Cedric Thebault, Junghyun Ahn, Philippe-Henri Gosselin, Christian Theobalt, Louis Chevallier</div>
+                    <div class="paper-venue">International Conference on Computer Vision (ICCV 2021)</div>
+                    <div class="paper-links">
+                        <a href="https://arxiv.org/abs/2103.15432" target="_blank">Paper</a>
+                        <a href="https://www.youtube.com/watch?v=VVr_bbXEjxE" target="_blank">Video</a>
+                        <a href="https://github.com/abdallahdib/DeepNextFace" target="_blank">Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="paper">
+                <div class="paper-media">
+                    <img src="https://abdallahdib.github.io/images/malikarjun2021photoapp.png" alt="Texture Generation" class="paper-image">
+                </div>
+                <div class="paper-content">
+                    <div class="paper-title">PhotoApp: Photorealistic Appearance Editing of Head Portraits</div>
+                    <div class="paper-authors">Mallikarjun B R, Ayush Tewari, <strong>Abdallah Dib</strong>, Tim Weyrich, Bernd Bickel, Hans-Peter Seidel, Hanspeter Pfister, Wojciech Matusik, Louis Chevallier, Mohamed Elgharib, Christian Theobalt</div>
+                    <div class="paper-venue">ACM Transactions on Graphics (SIGGRAPH Asia 2021)</div>
+                    <div class="paper-links">
+                        <a href="https://arxiv.org/abs/2103.07658" target="_blank">Paper</a>
+                        <a href="http://gvv.mpi-inf.mpg.de/projects/PhotoApp/" target="_blank">Project</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+    </div>
+</body>
+</html>
