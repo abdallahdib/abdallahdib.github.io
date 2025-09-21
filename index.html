@@ -11,11 +11,38 @@
             box-sizing: border-box;
         }
 
+        :root {
+            --bg-color: #fff;
+            --text-color: #333;
+            --secondary-text: #555;
+            --tertiary-text: #666;
+            --accent-color: #3498db;
+            --accent-hover: #2980b9;
+            --card-bg: #f8f9fa;
+            --border-color: #e0e0e0;
+            --shadow: rgba(0,0,0,0.1);
+            --highlight-bg: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+        }
+
+        [data-theme="dark"] {
+            --bg-color: #1a1a1a;
+            --text-color: #e0e0e0;
+            --secondary-text: #b0b0b0;
+            --tertiary-text: #999;
+            --accent-color: #4da6d9;
+            --accent-hover: #3d8bb8;
+            --card-bg: #2d2d2d;
+            --border-color: #404040;
+            --shadow: rgba(0,0,0,0.3);
+            --highlight-bg: linear-gradient(120deg, #2d5a5a 0%, #5a3d4a 100%);
+        }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background-color: #fff;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         .container {
@@ -26,13 +53,36 @@
 
         .header {
             margin-bottom: 40px;
+            position: relative;
         }
 
         .name {
             font-size: 2.5rem;
             font-weight: 300;
-            color: #2c3e50;
+            color: var(--text-color);
             margin-bottom: 20px;
+        }
+
+        .theme-toggle {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background: var(--card-bg);
+            border: 2px solid var(--border-color);
+            border-radius: 25px;
+            width: 50px;
+            height: 50px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            font-size: 1.2rem;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+            border-color: var(--accent-color);
         }
 
         .main-content {
@@ -48,13 +98,13 @@
             height: 200px;
             border-radius: 50%;
             object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            box-shadow: 0 4px 8px var(--shadow);
         }
 
         .bio {
             font-size: 1.1rem;
             line-height: 1.7;
-            color: #555;
+            color: var(--secondary-text);
         }
 
         .bio p {
@@ -64,8 +114,8 @@
         .contact-info {
             margin-top: 20px;
             padding: 20px;
-            background-color: #f8f9fa;
-            border-left: 4px solid #3498db;
+            background-color: var(--card-bg);
+            border-left: 4px solid var(--accent-color);
             border-radius: 4px;
         }
 
@@ -80,17 +130,17 @@
 
         .section-title {
             font-size: 1.8rem;
-            color: #2c3e50;
+            color: var(--text-color);
             margin-bottom: 25px;
             font-weight: 400;
-            border-bottom: 2px solid #3498db;
+            border-bottom: 2px solid var(--accent-color);
             padding-bottom: 8px;
         }
 
         .news-item {
             margin-bottom: 25px;
             padding: 20px;
-            background-color: #f8f9fa;
+            background-color: var(--card-bg);
             border-radius: 8px;
             border-left: 4px solid #e74c3c;
         }
@@ -103,28 +153,28 @@
         }
 
         .paper {
-    margin-bottom: 30px;
-    padding: 25px;
-    background-color: #fff;
-    border: 1px solid #e0e0e0;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-    display: grid;
-    grid-template-columns: 300px 1fr;
-    gap: 25px;
-    align-items: start;
-}
+            margin-bottom: 30px;
+            padding: 25px;
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            box-shadow: 0 2px 4px var(--shadow);
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 25px;
+            align-items: start;
+        }
 
         .paper-media {
-    width: 300px;
-    height: auto;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
+            width: 300px;
+            height: auto;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px var(--shadow);
+            position: relative;
+            padding: 0;
+            margin: 0;
+        }
 
         .paper-image {
             width: 100%;
@@ -138,14 +188,14 @@
         }
 
         .paper-video {
-    width: 100%;
-    height: auto;
-    border-radius: 0px;
-    display: block;
-    margin: 0;
-    padding: 0;
-    vertical-align: top;
-}
+            width: 100%;
+            height: auto;
+            border-radius: 0px;
+            display: block;
+            margin: 0;
+            padding: 0;
+            vertical-align: top;
+        }
 
         .video-overlay {
             position: absolute;
@@ -165,27 +215,29 @@
         }
 
         .highlight {
-    background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
-    padding: 2px 4px;
-    border-radius: 3px;
-    font-weight: 500;
-}
+            background: var(--highlight-bg);
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: 500;
+            color: var(--text-color);
+        }
+
         .paper-title {
             font-size: 1.2rem;
             font-weight: 600;
-            color: #2c3e50;
+            color: var(--text-color);
             margin-bottom: 8px;
             line-height: 1.4;
         }
 
         .paper-authors {
-            color: #666;
+            color: var(--tertiary-text);
             margin-bottom: 5px;
             font-size: 0.95rem;
         }
 
         .paper-venue {
-            color: #3498db;
+            color: var(--accent-color);
             font-weight: 500;
             margin-bottom: 10px;
             font-size: 0.9rem;
@@ -195,7 +247,7 @@
             display: inline-block;
             padding: 6px 12px;
             margin: 4px 8px 4px 0;
-            background-color: #3498db;
+            background-color: var(--accent-color);
             color: white;
             text-decoration: none;
             border-radius: 4px;
@@ -204,31 +256,53 @@
         }
 
         .paper-links a:hover {
-            background-color: #2980b9;
+            background-color: var(--accent-hover);
         }
 
         .project {
             margin-bottom: 25px;
             padding: 20px;
-            background-color: #f8f9fa;
+            background-color: var(--card-bg);
             border-radius: 8px;
         }
 
         .project-title {
             font-size: 1.1rem;
             font-weight: 600;
-            color: #2c3e50;
+            color: var(--text-color);
             margin-bottom: 8px;
         }
 
         .project-description {
-            color: #666;
+            color: var(--tertiary-text);
             line-height: 1.6;
         }
 
-        .highlight {
-            color: #3498db;
-            font-weight: 500;
+        .social-links {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .social-links img {
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .social-links img:hover {
+            opacity: 0.7;
+            transform: scale(1.1);
+        }
+
+        [data-theme="dark"] .social-links img {
+            filter: brightness(0.8) contrast(1.2);
+        }
+
+        a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: var(--accent-hover);
         }
 
         @media (max-width: 768px) {
@@ -257,6 +331,11 @@
                 width: 100%;
                 height: 200px;
             }
+
+            .theme-toggle {
+                position: relative;
+                margin: 0 auto 20px auto;
+            }
         }
     </style>
 </head>
@@ -264,6 +343,9 @@
     <div class="container">
         <header class="header">
             <h1 class="name">Abdallah Dib</h1>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
+                🌙
+            </button>
         </header>
 
         <div class="main-content">
@@ -281,32 +363,12 @@
                 </div>
             </div>
         </div>
-        <p align="center">
-<a href="https://www.linkedin.com/in/abdallah-dib-19912b25/"><img src="https://abdallahdib.github.io/images/linkedin.png" height="40" ></a>
-<a href="https://scholar.google.fr/citations?user=yb6wpSEAAAAJ&hl=fr"><img src="https://abdallahdib.github.io/images/scholar.png" height="40" ></a>
-<a href="https://twitter.com/abdallah_dib"><img src="https://abdallahdib.github.io/images/twitter.png" height="40" ></a>
-</p>
 
-        <!--<section class="section">
-            <h2 class="section-title">Recent News</h2>
-            
-            <div class="news-item">
-                <div class="news-date">June 25, 2025</div>
-                <p>SEREP paper got accepted to <strong>ICCV 2025</strong>. We introduce a novel learning-based method for monocular facial expression capture and retargeting.</p>
-            </div>
-            
-            <div class="news-item">
-                <div class="news-date">May 20, 2025</div>
-                <p>One paper accepted to 'AI for Creative Visual Content Generation Editing and Understanding' (CVEU), <strong>CVPR 2025</strong>. We propose a texture generator model giving artists control over shape, skin tone and fine details.</p>
-            </div>
-            
-            <div class="news-item">
-                <div class="news-date">March 1, 2024</div>
-                <p>Mosar paper got accepted to <strong>CVPR 2024</strong>. MoSAR turns a portrait image into a relightable 3D avatar.</p>
-            </div>
-        </section>-->
-
-
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/abdallah-dib-19912b25/"><img src="https://abdallahdib.github.io/images/linkedin.png" height="75" ></a>
+            <a href="https://scholar.google.fr/citations?user=yb6wpSEAAAAJ&hl=fr"><img src="https://abdallahdib.github.io/images/scholar3.png" height="80" ></a>
+            <a href="https://twitter.com/abdallah_dib"><img src="https://abdallahdib.github.io/images/twitter.png" height="75" ></a>
+        </div>
 
         <section class="section">
             <h2 class="section-title">Selected Projects</h2>
@@ -332,7 +394,7 @@
                 </div>
                 <div class="paper-content">
                     
-                    <div class="paper-authors">A technical <a href="https://dl.acm.org/doi/pdf/10.1145/3403736.3403938" target="_blank">paper</a> presents <a class="highlight">FaceLab</a>, our facial performance capture solution that enabled <a href="https://www.mpcvfx.com/en/" target="_blank">MPC</a> artists to automatically extract facial performances from single camera footage. This technology successfully processed over 260 shots for the 2019 film <a href="https://www.imdb.com/title/tt5697572/" target="_blank">Cats</a>.</div>
+                    <div class="paper-authors">A technical <a href="https://dl.acm.org/doi/pdf/10.1145/3403736.3403938" target="_blank">paper</a> presents <span class="highlight">FaceLab</span>, our facial performance capture solution that enabled <a href="https://www.mpcvfx.com/en/" target="_blank">MPC</a> artists to automatically extract facial performances from single camera footage. This technology successfully processed over 260 shots for the 2019 film <a href="https://www.imdb.com/title/tt5697572/" target="_blank">Cats</a>.</div>
                 </div>
             </div>
 
@@ -359,8 +421,6 @@
 
         </section>
 
-
-
         <section class="section">
             <h2 class="section-title">Selected Publications</h2>
             
@@ -371,7 +431,6 @@
                         <source src="https://abdallahdib.github.io/images/serep.mp4" type="video/mp4">
                     </video>
                 </div>
-
 
                 <div class="paper-content">
                     <div class="paper-title">SEREP: Semantic Facial Expression Representation for Robust In-the-Wild Capture and Retargeting</div>
@@ -417,8 +476,6 @@
                 </div>
             </div>
 
-            
-
             <div class="paper">
                 <div class="paper-media">
                     <video class="paper-video" controls muted loop autoplay>
@@ -454,12 +511,10 @@
                 </div>
             </div>
 
-
-
             <div class="paper">
                 <div class="paper-media">
                     <video class="paper-video" controls muted loop autoplay>
-                        <source src="https://abdallahdib.github.io/images/towards.mp4" type="video/mp4">
+                        <source src="https://abdallahdib.github.io/images/towards.mp4" type="_blank">
                     </video>
                 </div>
                 <div class="paper-content">
@@ -489,9 +544,38 @@
                 </div>
             </div>
 
-
         </section>
 
     </div>
+
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const button = document.querySelector('.theme-toggle');
+            
+            if (body.getAttribute('data-theme') === 'dark') {
+                body.removeAttribute('data-theme');
+                button.innerHTML = '🌙';
+                localStorage.setItem('theme', 'light');
+            } else {
+                body.setAttribute('data-theme', 'dark');
+                button.innerHTML = '☀️';
+                localStorage.setItem('theme', 'dark');
+            }
+        }
+
+        // Load saved theme on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme');
+            const button = document.querySelector('.theme-toggle');
+            
+            if (savedTheme === 'dark') {
+                document.body.setAttribute('data-theme', 'dark');
+                button.innerHTML = '☀️';
+            } else {
+                button.innerHTML = '🌙';
+            }
+        });
+    </script>
 </body>
 </html>
