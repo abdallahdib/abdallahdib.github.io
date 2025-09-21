@@ -403,6 +403,28 @@
                 gap: 10px;
                 margin-top: 20px;
             }
+            .nav-link {
+    background: var(--card-bg);
+    border: 2px solid var(--border-color);
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    border-color: var(--accent-color);
+    color: var(--text-color);
+}
+
         }
     </style>
 </head>
@@ -414,9 +436,13 @@
                 <button class="news-toggle" onclick="toggleNews()" title="Toggle news">
                     📰
                 </button>
+                <a href="projects.html" class="news-toggle" title="Personal Projects">
+        🛠️
+    </a>
                 <button class="theme-toggle" onclick="toggleTheme()" title="Toggle dark mode">
                     🌙
                 </button>
+
             </div>
         </header>
 
