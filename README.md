@@ -40,10 +40,10 @@ I develop methods for **face capture**, **facial animation**, and **avatar recon
   <strong>Skullptor: High Fidelity 3D Head Reconstruction in Seconds with Multi-View Normal Prediction</strong><br>
   <small>Noé Artru, Rukhshanda Hussain, Emeline Got, Alexandre Messier, David Lindell, Abdallah Dib</small><br>
   <i>IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR 2026)
-</i><br>
- <a href="[https://arxiv.org/abs/2312.13091](https://arxiv.org/abs/2602.21100)">pre-print</a> |
-  <a href="https://ubisoft-laforge.github.io/character/skullptor/">Project page</a> |
-  <a href="[[https://github.com/ubisoft/ubisoft-laforge-FFHQ-UV-Intrinsics](https://ubisoft-laforge.github.io/character/skullptor)](https://ubisoft-laforge.github.io/character/skullptor/)">Code</a>
+</i><br> 
+	<a href="https://arxiv.org/abs/2602.21100">pre-print</a>|
+	<a href="https://ubisoft-laforge.github.io/character/skullptor/">Project page</a> |
+	<a href="https://ubisoft-laforge.github.io/character/skullptor/">Code</a>
   
   <br><br>
   <video width="100%" preload="auto" muted controls>
