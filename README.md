@@ -22,7 +22,8 @@ I develop methods for **face capture**, **facial animation**, and **avatar recon
 
 
 ## News
-* **06/07/2025** We’ve published a new [blog](https://www.ubisoft.com/en-us/studio/laforge/news/5hypnC0mKU3LY4t4eHxnjR/mosar-gnration-davatars-de-personnage-fiables-partir-dun-simple-portrait-photo) post on Ubisoft website, showcasing our work on the paper [MoSAR](MoSAR), a technique used by artists to streamline their workflow.
+* **20/02/2026**  Skullptor paper got accepted to CVPR 2026. Skullptor reconstructs high-fidelity 3D heads in seconds by predicting view-consistent normals from a sparse set of input images and camera poses. More details from [Here](https://ubisoft-laforge.github.io/character/skullptor/)
+* **06/07/2025** A new [blog](https://www.ubisoft.com/en-us/studio/laforge/news/5hypnC0mKU3LY4t4eHxnjR/mosar-gnration-davatars-de-personnage-fiables-partir-dun-simple-portrait-photo) post on Ubisoft website, showcasing our work on the paper [MoSAR](MoSAR), a technique used by artists to streamline their workflow.
 * **25/06/2025**: SEREP paper got accepted to ICCV 2025. We introduce a novel learning-based method for monocular facial expression capture and retargeting. More details from [Here](https://ubisoft-laforge.github.io/character/serep/)
 * **20/05/2025**: One paper accepted to 'AI for Creative Visual Content Generation Editing and Understanding' (CVEU), CVPR  2025. We propose a texture generator model giving artists control over shape, skin tone and fine details. More details from [Here](https://ubisoft-laforge.github.io/character/GeoAwareTextures3D/index.html)
 * **09/03/2024**: We released **FFHQ-UV-Intrinsics** dataset that contains intrinsics texture maps for 10K subjects at HD resolution. Download it from [here](https://github.com/ubisoft/ubisoft-laforge-FFHQ-UV-Intrinsics) 
