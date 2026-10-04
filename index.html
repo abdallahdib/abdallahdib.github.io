@@ -5,9 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Abdallah Dib - Research Scientist</title>
 <meta name="description" content="Abdallah Dib, Research Scientist at Ubisoft La Forge. Face capture, facial animation and avatar reconstruction.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧑‍🔬</text></svg>">
 <style>
-:root{--bg:#fff;--ink:#222;--mute:#666;--line:#eaeaea;--soft:#f6f7f9;--acc:#1a5fb4;--thumb:144px;
+:root{--bg:#fff;--ink:#222;--mute:#666;--line:#eaeaea;--soft:#f6f7f9;--acc:#1a5fb4;--thumb:240px;
   box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161616;--ink:#e6e6e6;--mute:#999;--line:#2a2a2a;--soft:#1f1f1f;--acc:#6aa8ff}}
 :root[data-theme="dark"]{--bg:#161616;--ink:#e6e6e6;--mute:#999;--line:#2a2a2a;--soft:#1f1f1f;--acc:#6aa8ff}
@@ -35,8 +34,8 @@ aside{position:sticky;top:calc(20px + env(safe-area-inset-top,0px))}
 .news div{padding:8px 0;border-top:1px solid var(--line)}.news div:first-of-type{border-top:0}
 .news time{display:block;color:var(--acc);font-weight:600;font-size:12px}
 .tog{position:fixed;bottom:calc(14px + env(safe-area-inset-bottom,0px));right:14px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:99px;width:36px;height:36px;cursor:pointer}
-@media(max-width:760px){.wrap{grid-template-columns:1fr 200px;gap:20px}.top{grid-template-columns:1fr}.av{width:90px;height:90px}:root{--thumb:115px}}
-@media(max-width:560px){.wrap{grid-template-columns:1fr}aside{position:static;order:-1}.news{max-height:200px}}
+@media(max-width:760px){.wrap{grid-template-columns:1fr 200px;gap:20px}.top{grid-template-columns:1fr}.av{width:90px;height:90px}:root{--thumb:170px}}
+@media(max-width:560px){.wrap{grid-template-columns:1fr}:root{--thumb:42vw}aside{position:static;order:-1}.news{max-height:200px}}
 </style>
 </head>
 <body>
@@ -83,7 +82,7 @@ aside{position:sticky;top:calc(20px + env(safe-area-inset-top,0px))}
 // ============================================================
 
 const NEWS = [
-  { date: "DD/MM/2026", text: "KM-Speaker paper got accepted to <strong>SIGGRAPH Asia 2026</strong>. KM-Speaker animates 3D faces from speech while letting artists control the style from a reference performance, down to frame-level expressions, which makes it ideal for dialogue localization and dubbing. More details from <a href='https://ubisoft-laforge.github.io/character/kmspeaker/'>Here</a>" },
+  { date: "19/07/2026", text: "KM-Speaker paper got accepted to <strong>SIGGRAPH Asia 2026</strong>. KM-Speaker animates 3D faces from speech while letting artists control the style from a reference performance, down to frame-level expressions, which makes it ideal for dialogue localization and dubbing. More details from <a href='https://ubisoft-laforge.github.io/character/kmspeaker/'>Here</a>" },
   { date: "20/02/2026", text: "Skullptor paper got accepted to <strong>CVPR 2026</strong>. Skullptor reconstructs high-fidelity 3D heads in seconds by predicting view-consistent normals from a sparse set of input images and camera poses. More details from <a href='https://ubisoft-laforge.github.io/character/skullptor/'>Here</a>" },
   { date: "06/07/2025", text: "A new <a href='https://www.ubisoft.com/en-us/studio/laforge/news/5hypnC0mKU3LY4t4eHxnjR/mosar-gnration-davatars-de-personnage-fiables-partir-dun-simple-portrait-photo'>blog</a> post on Ubisoft website, showcasing our work on the paper <a href='https://ubisoft-laforge.github.io/character/mosar/'>MoSAR</a>, a technique used by artists to streamline their workflow." },
   { date: "25/06/2025", text: "SEREP paper got accepted to <strong>ICCV 2025</strong>. We introduce a novel learning-based method for monocular facial expression capture and retargeting. More details from <a href='https://ubisoft-laforge.github.io/character/serep/'>Here</a>" },
