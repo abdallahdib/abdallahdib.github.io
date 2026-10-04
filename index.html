@@ -15,7 +15,7 @@ body{background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,-apple-system
 a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
 .wrap{max-width:1120px;margin:0 auto;padding:32px 20px 60px;display:grid;grid-template-columns:1fr 260px;gap:32px;align-items:start}
 main{min-width:0}
-h2{font-size:1.1rem;font-weight:600;margin:36px 0 4px;padding-bottom:6px;border-bottom:1px solid var(--line)}
+h2{font-size:1.65rem;font-weight:600;letter-spacing:-.01em;margin:56px 0 6px;padding-bottom:8px;border-bottom:2px solid var(--acc);display:flex;align-items:center;gap:10px}h2 .n{font-size:13px;font-weight:600;color:var(--acc);border:1px solid var(--acc);padding:1px 9px;border-radius:99px}.psec{background:var(--soft);border-radius:12px;padding:6px 22px 10px;margin-top:56px}.psec h2{margin-top:18px}.psec .row:last-child{border-bottom:0}
 .top{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:start}
 .av{width:120px;height:120px;border-radius:50%;object-fit:cover}
 h1{font-size:1.9rem;font-weight:500}
@@ -65,8 +65,8 @@ aside{position:sticky;top:calc(20px + env(safe-area-inset-top,0px))}
   <h2>Selected Publications</h2>
   <div id="pubs"></div>
 
-  <h2>Selected Projects</h2>
-  <div id="projects"></div>
+  <section class="psec"><h2>Selected Projects</h2>
+  <div id="projects"></div></section>
 </main>
 <aside><div class="news"><h3>News</h3><div id="news" style="padding:0;border:0"></div></div></aside>
 </div>
@@ -82,6 +82,7 @@ aside{position:sticky;top:calc(20px + env(safe-area-inset-top,0px))}
 // ============================================================
 
 const NEWS = [
+  { date: "10/08/2026", text: "FaceSnap paper got accepted to <strong>WACV 2026</strong>. FaceSnap captures personalized, lightstage-quality facial performances in real time. Project page and dataset coming soon." },
   { date: "19/07/2026", text: "KM-Speaker paper got accepted to <strong>SIGGRAPH Asia 2026</strong>. KM-Speaker animates 3D faces from speech while letting artists control the style from a reference performance, down to frame-level expressions, which makes it ideal for dialogue localization and dubbing. More details from <a href='https://ubisoft-laforge.github.io/character/kmspeaker/'>Here</a>" },
   { date: "20/02/2026", text: "Skullptor paper got accepted to <strong>CVPR 2026</strong>. Skullptor reconstructs high-fidelity 3D heads in seconds by predicting view-consistent normals from a sparse set of input images and camera poses. More details from <a href='https://ubisoft-laforge.github.io/character/skullptor/'>Here</a>" },
   { date: "06/07/2025", text: "A new <a href='https://www.ubisoft.com/en-us/studio/laforge/news/5hypnC0mKU3LY4t4eHxnjR/mosar-gnration-davatars-de-personnage-fiables-partir-dun-simple-portrait-photo'>blog</a> post on Ubisoft website, showcasing our work on the paper <a href='https://ubisoft-laforge.github.io/character/mosar/'>MoSAR</a>, a technique used by artists to streamline their workflow." },
@@ -98,6 +99,15 @@ const NEWS = [
 ];
 
 const PUBLICATIONS = [
+  {
+    title: "FaceSnap: Real-Time Personalized Lightstage Facial Performance Capture",
+    authors: "Rukhshanda Hussain, Noé Artru, Emeline Got, Luiz Gustavo Hafemann, Alexandre Messier, Brandon Dearlove, Rafael M. O. Cruz, Abdallah Dib, Eric Granger",
+    venue: "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2026)",
+    media: "https://abdallahdib.github.io/images/facesnap.mp4",
+    fit: "contain",
+    note: "Project page & dataset coming soon",
+    links: {}
+  },
   {
     title: "KM-Speaker: Keypoint-Based Style Control for High-Quality Speech-Driven 3D Facial Animation and Dialogue Localization",
     authors: "Arthur Josi, Emeline Got, Abdallah Dib, Luiz Gustavo Hafemann, Rafael M. O. Cruz",
@@ -194,18 +204,19 @@ const PROJECTS = [
 <script>
 const ME = "Abdallah Dib";
 
-function media(src, alt) {
+function media(src, alt, fit) {
+  const st = fit === "contain" ? ' style="object-fit:contain;background:#000"' : "";
   return /\.(mp4|webm)$/i.test(src)
-    ? `<video src="${src}" muted loop playsinline preload="metadata"></video>`
-    : `<img src="${src}" alt="${alt}" loading="lazy">`;
+    ? `<video src="${src}"${st} muted loop playsinline preload="metadata"></video>`
+    : `<img src="${src}"${st} alt="${alt}" loading="lazy">`;
 }
 function links(l) {
   return Object.entries(l || {}).map(([k, v]) => `<a href="${v}" target="_blank" rel="noopener">${k}</a>`).join(" · ");
 }
 function row(item, sub, venue) {
-  return `<div class="row"><div class="th">${media(item.media, item.title)}</div><div>
+  return `<div class="row"><div class="th">${media(item.media, item.title, item.fit)}</div><div>
     <div class="t">${item.title}</div><div class="a">${sub}</div>
-    ${venue ? `<div class="v">${venue}</div>` : ""}<div class="l">${links(item.links)}</div></div></div>`;
+    ${venue ? `<div class="v">${venue}</div>` : ""}<div class="l">${links(item.links)}${item.note ? `<span style="color:var(--mute);font-style:italic">${item.note}</span>` : ""}</div></div></div>`;
 }
 
 document.getElementById("news").innerHTML = NEWS.map(n =>
