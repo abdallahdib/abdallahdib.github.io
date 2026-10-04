@@ -179,6 +179,7 @@ const PROJECTS = [
     title: "Skullptor",
     text: "A technology that streamlines lightstage capture, reconstructing high-fidelity 3D heads in seconds from just a few camera views. Featured on the Ubisoft La Forge website.",
     media: "https://abdallahdib.github.io/images/skullptor-laforge.png",
+    fit: "contain",
     links: {"Project": "https://ubisoft-laforge.github.io/character/skullptor/"}
   },
   {
@@ -212,8 +213,9 @@ const PROJECTS = [
 const ME = "Abdallah Dib";
 
 function media(src, alt, fit) {
-  const st = fit === "contain" ? ' style="object-fit:contain;background:#000"' : "";
-  return /\.(mp4|webm)$/i.test(src)
+  const vid = /\.(mp4|webm)$/i.test(src);
+  const st = fit === "contain" ? ` style="object-fit:contain;background:${vid ? "#000" : "transparent"}"` : "";
+  return vid
     ? `<video src="${src}"${st} muted loop playsinline preload="metadata"></video>`
     : `<img src="${src}"${st} alt="${alt}" loading="lazy">`;
 }
