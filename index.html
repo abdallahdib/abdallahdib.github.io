@@ -84,7 +84,7 @@ aside{position:sticky;top:calc(20px + env(safe-area-inset-top,0px))}
 // ============================================================
 
 const NEWS = [
-  { date: "10/08/2026", text: "FaceSnap paper got accepted to <strong>WACV 2026</strong>. FaceSnap captures personalized, lightstage-quality facial performances in real time. Project page and dataset coming soon." },
+  { date: "10/08/2026", text: "FaceSnap paper got accepted to <strong>WACV 2027</strong>. FaceSnap captures personalized, lightstage-quality facial performances in real time. Project page and dataset coming soon." },
   { date: "19/07/2026", text: "KM-Speaker paper got accepted to <strong>SIGGRAPH Asia 2026</strong>. KM-Speaker animates 3D faces from speech while letting artists control the style from a reference performance, down to frame-level expressions, which makes it ideal for dialogue localization and dubbing. More details from <a href='https://ubisoft-laforge.github.io/character/kmspeaker/'>Here</a>" },
   { date: "20/02/2026", text: "Skullptor paper got accepted to <strong>CVPR 2026</strong>. Skullptor reconstructs high-fidelity 3D heads in seconds by predicting view-consistent normals from a sparse set of input images and camera poses. More details from <a href='https://ubisoft-laforge.github.io/character/skullptor/'>Here</a>" },
   { date: "06/07/2025", text: "A new <a href='https://www.ubisoft.com/en-us/studio/laforge/news/5hypnC0mKU3LY4t4eHxnjR/mosar-gnration-davatars-de-personnage-fiables-partir-dun-simple-portrait-photo'>blog</a> post on Ubisoft website, showcasing our work on the paper <a href='https://ubisoft-laforge.github.io/character/mosar/'>MoSAR</a>, a technique used by artists to streamline their workflow." },
@@ -104,9 +104,10 @@ const PUBLICATIONS = [
   {
     title: "FaceSnap: Real-Time Personalized Lightstage Facial Performance Capture",
     authors: "Rukhshanda Hussain, Noé Artru, Emeline Got, Luiz Gustavo Hafemann, Alexandre Messier, Brandon Dearlove, Rafael M. O. Cruz, Abdallah Dib, Eric Granger",
-    venue: "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2026)",
+    venue: "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2027)",
     media: "https://abdallahdib.github.io/images/facesnap.mp4",
     fit: "contain",
+    bg: "#000",
     note: "Project page & dataset coming soon",
     links: {"Paper": "https://arxiv.org/abs/2608.31033"}
   },
@@ -143,6 +144,8 @@ const PUBLICATIONS = [
     authors: "Abdallah Dib, Luiz Gustavo Hafemann, Emeline Got, Trevor Anderson, Amin Fadaeinejad, Rafael M. O. Cruz, Marc-Andre Carbonneau",
     venue: "IEEE / CVF Computer Vision and Pattern Recognition Conference (CVPR 2024)",
     media: "https://abdallahdib.github.io/images/mosar.mp4",
+    fit: "contain",
+    bg: "#fff",
     links: {"Paper": "https://arxiv.org/abs/2312.13091", "Project": "https://ubisoft-laforge.github.io/character/mosar/", "Dataset": "https://github.com/ubisoft/ubisoft-laforge-FFHQ-UV-Intrinsics"}
   },
   {
@@ -213,9 +216,9 @@ const PROJECTS = [
 <script>
 const ME = "Abdallah Dib";
 
-function media(src, alt, fit) {
+function media(src, alt, fit, bg) {
   const vid = /\.(mp4|webm)$/i.test(src);
-  const st = fit === "contain" ? ` style="object-fit:contain;background:${vid ? "#000" : "transparent"}"` : "";
+  const st = fit === "contain" ? ` style="object-fit:contain;background:${bg || "transparent"}"` : "";
   return vid
     ? `<video src="${src}#t=0.001"${st} muted autoplay loop playsinline webkit-playsinline preload="metadata"></video>`
     : `<img src="${src}"${st} alt="${alt}" loading="lazy">`;
@@ -224,7 +227,7 @@ function links(l) {
   return Object.entries(l || {}).map(([k, v]) => `<a href="${v}" target="_blank" rel="noopener">${k}</a>`).join(" · ");
 }
 function row(item, sub, venue) {
-  return `<div class="row"><div class="th">${media(item.media, item.title, item.fit)}</div><div>
+  return `<div class="row"><div class="th">${media(item.media, item.title, item.fit, item.bg)}</div><div>
     <div class="t">${item.title}</div><div class="a">${sub}</div>
     ${venue ? `<div class="v">${venue}</div>` : ""}<div class="l">${links(item.links)}${item.note ? `<span style="color:var(--mute);font-style:italic">${item.note}</span>` : ""}</div></div></div>`;
 }
