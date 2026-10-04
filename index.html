@@ -13,7 +13,7 @@
 *{box-sizing:border-box;margin:0}
 body{background:var(--bg);color:var(--ink);font:15px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
-.wrap{max-width:1120px;margin:0 auto;padding:32px 20px 60px;display:grid;grid-template-columns:1fr 260px;gap:32px;align-items:start}
+.wrap{max-width:1120px;margin:0 auto;padding:32px 20px 60px;display:grid;grid-template-columns:minmax(0,1fr) 260px;grid-template-areas:"intro news" "main news";grid-template-rows:auto 1fr;column-gap:32px;align-items:start}.intro{grid-area:intro}main{grid-area:main}aside{grid-area:news;align-self:start}
 main{min-width:0}
 h2{font-size:1.65rem;font-weight:600;letter-spacing:-.01em;margin:56px 0 6px;padding-bottom:8px;border-bottom:2px solid var(--acc);display:flex;align-items:center;gap:10px}h2 .n{font-size:13px;font-weight:600;color:var(--acc);border:1px solid var(--acc);padding:1px 9px;border-radius:99px}.psec{background:var(--soft);border-radius:12px;padding:6px 22px 10px;margin-top:56px}.psec h2{margin-top:18px}.psec .row:last-child{border-bottom:0}
 .top{display:grid;grid-template-columns:120px 1fr;gap:24px;align-items:start}
@@ -33,17 +33,17 @@ aside{position:sticky;top:calc(20px + env(safe-area-inset-top,0px))}
 .news h3{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--mute);margin-bottom:6px;font-weight:600}
 .news div{padding:8px 0;border-top:1px solid var(--line)}.news div:first-of-type{border-top:0}
 .news time{display:block;color:var(--acc);font-weight:600;font-size:12px}
-.tog{position:fixed;bottom:calc(14px + env(safe-area-inset-bottom,0px));right:14px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:99px;width:36px;height:36px;cursor:pointer}
+.tog{display:grid;place-items:center;padding:0;position:fixed;bottom:calc(14px + env(safe-area-inset-bottom,0px));right:14px;border:1px solid var(--line);background:var(--bg);color:var(--ink);border-radius:99px;width:36px;height:36px;cursor:pointer}
 @media(max-width:760px){.wrap{grid-template-columns:1fr 200px;gap:20px}.top{grid-template-columns:1fr}.av{width:90px;height:90px}:root{--thumb:170px}}
-@media(max-width:560px){.wrap{grid-template-columns:1fr}:root{--thumb:42vw}aside{position:static;order:-1}.news{max-height:200px}}
+@media(max-width:560px){.wrap{grid-template-columns:minmax(0,1fr);grid-template-areas:"intro" "news" "main";padding:20px 16px 60px}aside{position:static;margin-top:20px}.news{max-height:220px}.top{gap:12px}.av{width:80px;height:80px}h1{font-size:1.6rem}.row{flex-direction:column;align-items:stretch;gap:10px;padding:16px 0}:root{--thumb:100%}h2{font-size:1.4rem;margin-top:40px}.psec{padding:4px 14px 8px;margin-top:40px}}
 </style>
 </head>
 <body>
-<button class="tog" id="theme" title="Toggle dark mode" aria-label="Toggle dark mode">◐</button>
+<button class="tog" id="theme" title="Toggle dark mode" aria-label="Toggle dark mode"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 1 0 0 20V2z"/><circle cx="12" cy="12" r="9.2" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
 <div class="wrap">
-<main>
+<header class="intro">
   <div class="top">
-    <img class="av" src="https://abdallahdib.github.io/images/me-crop2.jpg" alt="Abdallah Dib">
+    <img class="av" src="https://abdallahdib.github.io/images/me-crop.jpg" alt="Abdallah Dib">
     <div>
       <h1>Abdallah Dib</h1>
       <div class="sub">Research Scientist · Ubisoft La Forge, Montréal</div>
@@ -61,7 +61,8 @@ aside{position:sticky;top:calc(20px + env(safe-area-inset-top,0px))}
       </div>
     </div>
   </div>
-
+</header>
+<main>
   <section class="psec"><h2>Selected Projects</h2>
   <div id="projects"></div></section>
 
@@ -237,7 +238,7 @@ document.querySelectorAll(".news a, .l a").forEach(a => { a.target = "_blank"; a
 
 // Play videos only while visible (saves bandwidth/CPU)
 const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? e.target.play().catch(()=>{}) : e.target.pause()), {rootMargin: "100px"});
-document.querySelectorAll("video").forEach(v => io.observe(v));
+document.querySelectorAll("video").forEach(v => { v.muted = true; v.playsInline = true; v.setAttribute("playsinline", ""); io.observe(v); });
 
 // Dark mode toggle (remembered)
 const root = document.documentElement;
