@@ -62,11 +62,12 @@ aside{position:sticky;top:calc(20px + env(safe-area-inset-top,0px))}
     </div>
   </div>
 
+  <section class="psec"><h2>Selected Projects</h2>
+  <div id="projects"></div></section>
+
   <h2>Selected Publications</h2>
   <div id="pubs"></div>
 
-  <section class="psec"><h2>Selected Projects</h2>
-  <div id="projects"></div></section>
 </main>
 <aside><div class="news"><h3>News</h3><div id="news" style="padding:0;border:0"></div></div></aside>
 </div>
@@ -106,7 +107,7 @@ const PUBLICATIONS = [
     media: "https://abdallahdib.github.io/images/facesnap.mp4",
     fit: "contain",
     note: "Project page & dataset coming soon",
-    links: {}
+    links: {"Paper": "https://arxiv.org/abs/2608.31033"}
   },
   {
     title: "KM-Speaker: Keypoint-Based Style Control for High-Quality Speech-Driven 3D Facial Animation and Dialogue Localization",
@@ -174,6 +175,12 @@ const PUBLICATIONS = [
 ];
 
 const PROJECTS = [
+  {
+    title: "Skullptor",
+    text: "A technology that streamlines lightstage capture, reconstructing high-fidelity 3D heads in seconds from just a few camera views. Featured on the Ubisoft La Forge website.",
+    media: "https://abdallahdib.github.io/images/skullptor-laforge.png",
+    links: {"Project": "https://ubisoft-laforge.github.io/character/skullptor/"}
+  },
   {
     title: "MoSAR",
     text: "Turns a single portrait photo into a fully relightable, detailed 3D avatar, streamlining character creation for artists. Featured on the Ubisoft blog.",
