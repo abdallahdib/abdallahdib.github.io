@@ -217,7 +217,7 @@ function media(src, alt, fit) {
   const vid = /\.(mp4|webm)$/i.test(src);
   const st = fit === "contain" ? ` style="object-fit:contain;background:${vid ? "#000" : "transparent"}"` : "";
   return vid
-    ? `<video src="${src}"${st} muted loop playsinline preload="metadata"></video>`
+    ? `<video src="${src}#t=0.001"${st} muted autoplay loop playsinline webkit-playsinline preload="metadata"></video>`
     : `<img src="${src}"${st} alt="${alt}" loading="lazy">`;
 }
 function links(l) {
@@ -237,7 +237,7 @@ document.getElementById("projects").innerHTML = PROJECTS.map(p => row(p, p.text)
 document.querySelectorAll(".news a, .l a").forEach(a => { a.target = "_blank"; a.rel = "noopener"; });
 
 // Play videos only while visible (saves bandwidth/CPU)
-const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? e.target.play().catch(()=>{}) : e.target.pause()), {rootMargin: "100px"});
+const io = new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? e.target.play().catch(() => { e.target.controls = true; }) : e.target.pause()), {rootMargin: "100px"});
 document.querySelectorAll("video").forEach(v => { v.muted = true; v.playsInline = true; v.setAttribute("playsinline", ""); io.observe(v); });
 
 // Dark mode toggle (remembered)
